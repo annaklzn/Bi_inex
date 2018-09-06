@@ -1,0 +1,110 @@
+$orange: #f3a10d;
+$white: #ffffff;
+$black: #000000;
+
+//General styles
+html{
+	font-size: 16px;
+}
+a{
+	color: $white;
+	&:hover{
+		color: $orange;
+	}
+}
+
+%textUp{
+	text-transform: uppercase;
+} 
+
+.orange{
+	color: orange;
+}
+
+	
+
+//Media 
+@mixin xl {
+  @media (min-width: 1200px) {
+    @content;
+  }
+}
+
+@mixin lg {
+  @media (min-width: 992px) and (max-width: 1199px) {
+    @content;
+  }
+}
+
+@mixin md {
+  @media (min-width: 768px) and (max-width: 991px) {
+    @content;
+  }
+}
+
+@mixin sm {
+  @media (min-width: 576px) and (max-width: 767px) {
+    @content;
+  }
+}
+
+@mixin xs {
+  @media (min-width: 320px) and (max-width: 575px) {
+    @content;
+  }
+}
+
+@mixin marginLR($marginL, $marginR) {
+ 	margin-left: $marginL;
+ 	margin-right: $marginR;
+ }
+
+ @mixin marginTB($marginT, $marginB) {
+ 	margin-top: $marginT;
+ 	margin-bottom: $marginB;
+ }
+
+ @mixin paddingLR($paddingL, $paddingR) {
+ 	padding-left: $paddingL;
+ 	padding-right: $paddingR;
+ } 
+
+ @mixin paddingTB($paddingT, $paddingB) {
+ 	padding-top: $paddingT;
+ 	padding-bottom: $paddingB;
+ } 
+
+//fonts
+%USHText {
+	font-family: 'Uni Sans Heavy Caps', sans-serif;
+	font-weight: 900;
+}
+%RobotoBText{
+	font-family: 'RobotoB', sans-serif;
+	font-weight: 700;
+}
+%RobotoText{
+	font-family: 'Roboto', sans-serif;
+	font-weight: 400;
+}
+%PTSansText{
+	font-family: 'PT Sans', sans-serif;
+	font-weight: 400;
+}
+%PTSansBText{
+	font-family: 'PT Sans B', sans-serif;
+	font-weight: 700;
+}
+%OTexl{
+	font-family: 'O', sans-serif;
+	font-weight: 400;
+}
+%OTexl{
+	font-family: 'O L', sans-serif;
+	font-weight: 300;
+}
+%FAText{
+	font-family: 'FontAwesome', sans-serif;
+	font-weight: 400;
+}
+

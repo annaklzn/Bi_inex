@@ -1,0 +1,149 @@
+.header{
+	background-color: $black;
+	@extend %USHText;
+	@extend %textUp;
+	.logo_container{
+		@include marginTB(36px, 41px);
+	}
+	.nav{
+		display: flex;
+    	align-items: center;
+
+
+		.nav_item{
+			color: $white;
+			font-size: 1.125em;
+			@include marginLR(0px, 25px);
+			&:hover{
+				color: $orange;
+			}
+		}
+	}
+	.head_select{
+		display: flex;
+		font-size: 0.875em;
+    	align-items: center;
+		color: $white;
+		background-color: $black;
+		border: none;
+
+		&:hover{
+			outline: 0;
+			color: $orange;
+		}
+		&:active{
+			outline: 0;
+		}
+		&:focus{
+			outline: 0;
+		}
+		.head_select_opt{
+			
+			&:hover{
+			outline: 0;
+			color: $orange;
+			}
+			&:active{
+				outline: 0;
+			}
+			&:focus{
+				outline: 0;
+			}
+		}
+	}
+}
+
+.main_sect{
+	background: url("../../img/bg_2.png") -157px 264px no-repeat, url("../../img/bg_3.png") 0px -16px no-repeat, url("../../img/space.jpg") 0px -355px no-repeat;
+	background-size: auto, cover, cover;
+	.main_sect_container{
+
+		position: relative;
+		@extend %USHText;
+		color: $white;
+		.main_tittle{
+			margin-top: 168px;
+			font-size: 1.612em;
+		}
+		.hexagon{
+			margin-top: 115px;
+			position: relative;
+	  		width: 400px; 
+	  		height: 230.94px;
+	  		background-color: #000000ab;
+	  		margin: 115.47px 0;
+		}
+		.hexagon:before,
+		.hexagon:after {
+			  content: "";
+			  position: absolute;
+			  width: 0;
+			  border-left: 200px solid transparent;
+			  border-right: 200px solid transparent;
+			  margin-left: -50%;
+			}
+
+		.hexagon:before {
+			  bottom: 100%;
+			  border-bottom: 115.47px solid #000000ab;
+		}
+
+		.hexagon:after {
+		  top: 100%;
+		  margin-left: -60%;
+		  border-top: 115.47px solid #000000ab;
+		}
+		.info_about{
+			margin-bottom: 146px;
+    		margin-top: 172px;
+			@include paddingLR(66px, 66px);
+			font-size: 0.875em;
+			text-align: center;
+			background-color: #000000ab;
+			.info_tittle{
+				font-size: 1.875em
+			}
+		}
+		.info_btn{
+			
+		}
+		.scroll_down{
+			position: absolute;
+    		font-size: 0.875em;
+    		bottom: -5px;
+    		left: 47%;
+			p{
+				text-align: center;
+			}
+		}
+		.main_nav{ 
+			position: absolute;
+			top: 44%;
+			right: 10px;
+			.main_nav_list{
+				list-style: none;
+				.main_nav_item{
+
+					.main_nav_href{
+
+					}
+					.main_nav_item_icon{
+						width: 21px;
+			    		height: 23px;
+			    		background: url(../../img/main_nav.png) 0px 25px;
+						&:hover{
+							background: url(../../img/main_nav.png) 0px 0px;
+						}
+					}
+				}
+				
+			}
+		}
+
+		.join_us{
+			position: absolute;
+    		bottom: 10px;
+    		right: 0;
+		}
+	}
+}

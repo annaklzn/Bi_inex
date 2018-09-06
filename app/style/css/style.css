@@ -1,0 +1,196 @@
+html {
+  font-size: 16px; }
+
+a {
+  color: #ffffff; }
+  a:hover {
+    color: #f3a10d; }
+
+.header {
+  text-transform: uppercase; }
+
+.orange {
+  color: orange; }
+
+.header, .main_sect .main_sect_container {
+  font-family: 'Uni Sans Heavy Caps', sans-serif;
+  font-weight: 900; }
+
+@font-face {
+  font-family: 'Roboto';
+  src: url("../../fonts/Roboto Bold.woff2") format("woff2"), url("../../fonts/Roboto Bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+  font-stretch: normal;
+  unicode-range: U+0020-2044; }
+
+@font-face {
+  font-family: 'Roboto';
+  src: url("../../fonts/Roboto Regular.woff2") format("woff2"), url("../../fonts/Roboto Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-stretch: normal;
+  unicode-range: U+0020-2044; }
+
+@font-face {
+  font-family: 'Uni Sans Heavy Caps';
+  src: url("../../fonts/Uni Sans Heavy Caps Regular.woff2") format("woff2"), url("../../fonts/Uni Sans Heavy Caps Regular.woff") format("woff");
+  font-weight: 900;
+  font-style: normal;
+  font-stretch: normal;
+  unicode-range: U+0020-00BB; }
+
+@font-face {
+  font-family: 'PT Sans';
+  src: url("PT Sans.woff2") format("woff2"), url("PT Sans.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-stretch: normal;
+  unicode-range: U+0020-F6CE; }
+
+@font-face {
+  font-family: 'PT Sans';
+  src: url("PT Sans Bold.woff2") format("woff2"), url("PT Sans Bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+  font-stretch: normal;
+  unicode-range: U+0020-F6CE; }
+
+@font-face {
+  font-family: 'o';
+  src: url("o Condensed.woff2") format("woff2"), url("o Condensed.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-stretch: condensed;
+  unicode-range: U+0020-2044; }
+
+@font-face {
+  font-family: 'o';
+  src: url("o Light.woff2") format("woff2"), url("o Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: normal;
+  unicode-range: U+0020-2044; }
+
+@font-face {
+  font-family: 'FontAwesome';
+  src: url("FontAwesome Regular.woff2") format("woff2"), url("FontAwesome Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-stretch: normal;
+  unicode-range: U+0020-00D8; }
+
+.header {
+  background-color: #000000; }
+  .header .logo_container {
+    margin-top: 36px;
+    margin-bottom: 41px; }
+  .header .nav {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center; }
+    .header .nav .nav_item {
+      color: #ffffff;
+      font-size: 1.125em;
+      margin-left: 0px;
+      margin-right: 25px; }
+      .header .nav .nav_item:hover {
+        color: #f3a10d; }
+  .header .head_select {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    font-size: 0.875em;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    color: #ffffff;
+    background-color: #000000;
+    border: none; }
+    .header .head_select:hover {
+      outline: 0;
+      color: #f3a10d; }
+    .header .head_select:active {
+      outline: 0; }
+    .header .head_select:focus {
+      outline: 0; }
+    .header .head_select .head_select_opt:hover {
+      outline: 0;
+      color: #f3a10d; }
+    .header .head_select .head_select_opt:active {
+      outline: 0; }
+    .header .head_select .head_select_opt:focus {
+      outline: 0; }
+
+.main_sect {
+  background: url("../../img/bg_2.png") -157px 264px no-repeat, url("../../img/bg_3.png") 0px -16px no-repeat, url("../../img/space.jpg") 0px -355px no-repeat;
+  -webkit-background-size: auto, cover, cover;
+          background-size: auto, cover, cover; }
+  .main_sect .main_sect_container {
+    position: relative;
+    color: #ffffff; }
+    .main_sect .main_sect_container .main_tittle {
+      margin-top: 168px;
+      font-size: 1.612em; }
+    .main_sect .main_sect_container .hexagon {
+      margin-top: 115px;
+      position: relative;
+      width: 400px;
+      height: 230.94px;
+      background-color: #000000ab;
+      margin: 115.47px 0; }
+    .main_sect .main_sect_container .hexagon:before,
+    .main_sect .main_sect_container .hexagon:after {
+      content: "";
+      position: absolute;
+      width: 0;
+      border-left: 200px solid transparent;
+      border-right: 200px solid transparent;
+      margin-left: -50%; }
+    .main_sect .main_sect_container .hexagon:before {
+      bottom: 100%;
+      border-bottom: 115.47px solid #000000ab; }
+    .main_sect .main_sect_container .hexagon:after {
+      top: 100%;
+      margin-left: -60%;
+      border-top: 115.47px solid #000000ab; }
+    .main_sect .main_sect_container .info_about {
+      margin-bottom: 146px;
+      margin-top: 172px;
+      padding-left: 66px;
+      padding-right: 66px;
+      font-size: 0.875em;
+      text-align: center;
+      background-color: #000000ab; }
+      .main_sect .main_sect_container .info_about .info_tittle {
+        font-size: 1.875em; }
+    .main_sect .main_sect_container .scroll_down {
+      position: absolute;
+      font-size: 0.875em;
+      bottom: -5px;
+      left: 47%; }
+      .main_sect .main_sect_container .scroll_down p {
+        text-align: center; }
+    .main_sect .main_sect_container .main_nav {
+      position: absolute;
+      top: 44%;
+      right: 10px; }
+      .main_sect .main_sect_container .main_nav .main_nav_list {
+        list-style: none; }
+        .main_sect .main_sect_container .main_nav .main_nav_list .main_nav_item .main_nav_item_icon {
+          width: 21px;
+          height: 23px;
+          background: url(../../img/main_nav.png) 0px 25px; }
+          .main_sect .main_sect_container .main_nav .main_nav_list .main_nav_item .main_nav_item_icon:hover {
+            background: url(../../img/main_nav.png) 0px 0px; }
+    .main_sect .main_sect_container .join_us {
+      position: absolute;
+      bottom: 10px;
+      right: 0; }
