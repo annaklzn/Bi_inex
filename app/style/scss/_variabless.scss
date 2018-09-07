@@ -2,16 +2,7 @@ $orange: #f3a10d;
 $white: #ffffff;
 $black: #000000;
 
-//General styles
-html{
-	font-size: 16px;
-}
-a{
-	color: $white;
-	&:hover{
-		color: $orange;
-	}
-}
+
 
 %textUp{
 	text-transform: uppercase;
@@ -107,4 +98,69 @@ a{
 	font-family: 'FontAwesome', sans-serif;
 	font-weight: 400;
 }
+@mixin hexagonBase( $hexagonWidth){
+	position: relative;
+	width: $hexagonWidth; 
+	height: calc($hexagonWidth/1.731);
+	background-color: $orange;
+	margin: 115.47px 0;
+		&:before,
+		&:after {
+			content: "";
+			position: absolute;
+			width: 0;
+			border-left: calc($hexagonWidth/2) solid transparent;
+			border-right: calc($hexagonWidth/2) solid transparent;
+			margin-left: -50%;
+			}
 
+		&:before {
+			bottom: 100%;
+			border-bottom: 115.47px solid #000000ab;
+		}
+
+		&:after {
+		  top: 100%;
+		  margin-left: -60%;
+		  border-top: 115.47px solid #000000ab;
+		}
+}
+
+//General styles
+html{
+	font-size: 16px;
+}
+.container {
+	@include xl{
+		width: 1264px;
+	}
+}
+
+a{
+	color: $white;
+	&:hover{
+		color: $orange;
+	}
+}
+
+
+@keyframes animatedBackground {
+    0 {
+        background-position: 0px 0px
+    }
+    100% {
+        background-position: 0px -451px
+    }
+}
+
+#main_sect{
+	height: 100vh;
+	width:100%;
+	background-image: url("../../img/space.jpg");
+	background-size: cover;
+	animation: animatedBackground 100s linear infinite;
+	-moz-animation: animatedBackground 100s linear infinite;
+	-webkit-animation: animatedBackground 100s linear infinite;
+ 	-o-animation: animatedBackground 100s linear infinite;
+	
+}

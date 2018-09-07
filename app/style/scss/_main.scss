@@ -2,21 +2,51 @@
 	background-color: $black;
 	@extend %USHText;
 	@extend %textUp;
+	.header_cont{
+		@include md{
+			justify-content: space-between;
+		}
+	}
 	.logo_container{
 		@include marginTB(36px, 41px);
 	}
+	
 	.nav{
 		display: flex;
     	align-items: center;
-
-
+		.hamburder_icon{
+			position: absolute; 	
+		}
 		.nav_item{
+			z-index: 1;
+			display: inline-block;
+			position: relative;
 			color: $white;
 			font-size: 1.125em;
 			@include marginLR(0px, 25px);
 			&:hover{
 				color: $orange;
 			}
+		}
+		.nav_item:before{
+			content: "";
+			opacity: 0;
+			top: -48px;
+    		left: -43px;	
+			position: absolute;
+			width: 200px;
+			height: 200px;
+			background: url("../../img/hex2.png") no-repeat;
+		}
+		.nav_item:after{
+			content: "";
+			opacity: 0;
+			top: -36px;
+    		left: -4px;
+			position: absolute;
+			width: 200px;
+			height: 200px;
+			background: url("../../img/hex3.png") no-repeat;
 		}
 	}
 	.head_select{
@@ -54,33 +84,45 @@
 }
 
 .main_sect{
-	background: url("../../img/bg_2.png") -157px 264px no-repeat, url("../../img/bg_3.png") 0px -16px no-repeat, url("../../img/space.jpg") 0px -355px no-repeat;
-	background-size: auto, cover, cover;
+	background-size: cover;
+	@include md{
+		background: url("../../img/bg_2.png") -157px 264px no-repeat, url("../../img/bg_3.png") -600px -16px no-repeat, url("../../img/space.jpg") -1000px -700px no-repeat;
+		background-size: auto, cover, cover;
+	}
 	.main_sect_container{
-
+		background: url("../../img/ball_01.png") 100px 106px no-repeat, url("../../img/ball_02.png") 269px 115px no-repeat, url("../../img/ball_03.png") 473px 188px no-repeat, url("../../img/ball_04.png") 632px 289px no-repeat, url("../../img/ball_05.png") 704px 380px no-repeat;
 		position: relative;
 		@extend %USHText;
 		color: $white;
 		.main_tittle{
-			margin-top: 168px;
+			margin-top: 160px;
 			font-size: 1.612em;
 		}
 		.hexagon{
 			margin-top: 115px;
 			position: relative;
-	  		width: 400px; 
-	  		height: 230.94px;
+	  		width: 432px; 
+	  		height: 249.42px;
 	  		background-color: #000000ab;
 	  		margin: 115.47px 0;
+	  		@include sm{
+	  			width: 325px;
+	  			height: 187.75px; 
+	  		}
 		}
 		.hexagon:before,
 		.hexagon:after {
 			  content: "";
 			  position: absolute;
 			  width: 0;
-			  border-left: 200px solid transparent;
-			  border-right: 200px solid transparent;
+			  border-left: 216px solid transparent;
+			  border-right: 216px solid transparent;
 			  margin-left: -50%;
+			  @include sm{
+			  	border-left: 162px solid transparent;
+			  	border-right: 162px solid transparent;
+			  }
+
 			}
 
 		.hexagon:before {
@@ -90,23 +132,81 @@
 
 		.hexagon:after {
 		  top: 100%;
-		  margin-left: -60%;
+		  margin-left: -50%;
 		  border-top: 115.47px solid #000000ab;
 		}
+
 		.info_about{
+			
 			margin-bottom: 146px;
     		margin-top: 172px;
 			@include paddingLR(66px, 66px);
 			font-size: 0.875em;
 			text-align: center;
 			background-color: #000000ab;
+
 			.info_tittle{
-				font-size: 1.875em
+				margin-bottom: 45px;
+				font-size: 1.875em;
 			}
 		}
+
 		.info_btn{
-			
+				width: 146px;
+    			height: 125px;
+    			margin: 29px 79px;
+				display: flex;
+    			align-items: center;
+    			justify-content: center;
+    			z-index: 10;
+   			 	position: absolute;
+    			overflow: visible;
+    			background: url(../../img/hex.png) 16px -2px no-repeat;
 		}
+		.learn_m{
+				
+  				&:hover, &:active{
+  				text-decoration: none;
+  				color: $white;
+  				}
+  			}
+  /*
+		.orangehex{
+			margin-top: 57px;
+			display: inline-block;
+			position: relative;
+  			width: 104px; 
+  			height: 60.04px;
+  			background-color: #f3a10dab;
+  			margin: 30.02px 0;
+  			z-index: 10;
+  			margin-top: 12px;
+  			
+  			}
+		.orangehex:before,
+		.orangehex:after {
+			  content: "";
+			  position: absolute;
+			  width: 0;
+			  border-left: 52px solid transparent;
+			  border-right: 52px solid transparent;
+			  margin-left: -50%;
+			}
+
+		.orangehex:before {
+		  bottom: 100%;
+		  border-bottom: 30.02px solid #f3a10dab;
+		  margin-left: -50%;
+		}
+
+		.orangehex:after {
+		  top: 100%;
+		  width: 0;
+		  border-top: 30.02px solid #f3a10dab;
+		  margin-left: -50%;
+		}
+*/
+
 		.scroll_down{
 			position: absolute;
     		font-size: 0.875em;
@@ -122,12 +222,22 @@
 			right: 10px;
 			.main_nav_list{
 				list-style: none;
+				display: flex;
+          		flex-direction: column;
+          		align-items: flex-end;
 				.main_nav_item{
-
+					a{
+						text-decoration: none;
+						color: rgba(0,0,0, 0);
+						&:hover, &:active {
+							color: $white;
+						}
+					}
 					.main_nav_href{
-
+						padding-right: 20px;
 					}
 					.main_nav_item_icon{
+						display: inline-block;
 						width: 21px;
 			    		height: 23px;
 			    		background: url(../../img/main_nav.png) 0px 25px;
@@ -147,3 +257,5 @@
 		}
 	}
 }
+
+

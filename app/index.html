@@ -12,20 +12,26 @@
 
 	<header class="header">
 		<div class="container">
-			<div class="row">
+			<div class="row header_cont">
 				<div class="logo_container offset-1">
 					<a href="#">
 						<img src="img/logo.png" alt="logo" class="">
 					</a>
 				</div>
-				<nav class="nav offset-1">
-					<a href="#" class="nav_item">About</a>
-					<a href="#" class="nav_item">Solutions</a>
-					<a href="#" class="nav_item">Products</a>
-					<a href="#" class="nav_item">Partners</a>
-					<a href="#" class="nav_item">Contacts</a>
+
+				<nav class="nav offset-1 navbar navbar-expand-lg">
+					<div class="navbar-toggler hamburger hamburger_icon"  data-toggle="collapse" data-target="#menu">
+						<img src="img/menu_icon.png" alt="menu">
+					</div>
+					<div class="collapse navbar-collapse" id="menu">
+						<a href="#" class="nav_item">About</a>
+						<a href="#" class="nav_item">Solutions</a>
+						<a href="#" class="nav_item">Products</a>
+						<a href="#" class="nav_item">Partners</a>
+						<a href="#" class="nav_item">Contacts</a>
+					</div>
 				</nav>
-				<select class="selectpicker head_select offset-1" data-width="fit">
+				<select class="selectpicker head_select offset-1 d-none d-lg-block" data-width="fit">
     				<option data-content='English' class="head_select_opt">En</option>
   					<option  data-content='Español'  class="head_select_opt">Es</option>
 				</select>
@@ -36,7 +42,7 @@
 	<section class="main_sect" id="main_sect">
 		<div class="container main_sect_container">
 			<div class="row">
-				<h3 class="main_tittle offset-md-9"><span class="orange">Investing</span> in saccess</h3>
+				<h3 class="main_tittle offset-md-6 offset-lg-9 offset-sm-7 col-lg-4 col-md-6 col-sm-7"><span class="orange">Investing</span> in saccess</h3>
 				<div class="hexagon info_about offset-2">
 					<h2 class="info_tittle">About</h2>
 					<p>
@@ -46,7 +52,10 @@
 						800 employees worldwide: 
 						300 bookmakers, 260 it specialists, 
 					</p>
-					<a href="#" class="info_btn">Learn More</a>
+					<div class="info_btn">
+						<a href="#" class="learn_m">Lern<br>More</a>
+					</div>
+					
 				</div>
 				<div class="main_nav">
 					<ul class="main_nav_list">
@@ -96,9 +105,12 @@
 				</div>
 
 				<div class="scroll_down text-center">
-					<a href="#">
+					<a href="#" class="d-none d-lg-block">
 						<img src="img/icon-scroll.png" alt="scroll">
 						<p>scroll down</p>
+					</a>
+					<a href="#" class="d-lg-none d-md-block">
+						<img src="img/icon-scroll2.png" alt="scroll">
 					</a>
 				</div>
 				<div class="join_us">
