@@ -22,26 +22,81 @@ a {
 
 @-webkit-keyframes animatedBackground {
   0 {
-    background-position: 0px 0px; }
+    background-position: -250px -200px; }
   100% {
-    background-position: 0px -451px; } }
+    background-position: 0px -60px; } }
 
 @keyframes animatedBackground {
   0 {
-    background-position: 0px 0px; }
+    background-position: -250px -200px; }
   100% {
-    background-position: 0px -451px; } }
+    background-position: 0px -60px; } }
 
-#main_sect {
-  height: 100vh;
+@-webkit-keyframes balkon {
+  0 {
+    -webkit-background-size: 104% 104%;
+            background-size: 104%; }
+  25% {
+    -webkit-background-size: 103% 103%;
+            background-size: 103%; }
+  50% {
+    -webkit-background-size: 102% 102%;
+            background-size: 102%; }
+  75% {
+    -webkit-background-size: 101% 101%;
+            background-size: 101%; }
+  100% {
+    -webkit-background-size: 100% 100%;
+            background-size: 100%; } }
+
+@keyframes balkon {
+  0 {
+    -webkit-background-size: 104% 104%;
+            background-size: 104%; }
+  25% {
+    -webkit-background-size: 103% 103%;
+            background-size: 103%; }
+  50% {
+    -webkit-background-size: 102% 102%;
+            background-size: 102%; }
+  75% {
+    -webkit-background-size: 101% 101%;
+            background-size: 101%; }
+  100% {
+    -webkit-background-size: 100% 100%;
+            background-size: 100%; } }
+
+@-webkit-keyframes Ball {
+  0 {
+    background-position: 100px 106px; }
+  50% {
+    background-position: 100px 40px; }
+  100% {
+    background-position: 100px 106px; } }
+
+@keyframes Ball {
+  0 {
+    background-position: 100px 106px; }
+  50% {
+    background-position: 100px 40px; }
+  100% {
+    background-position: 100px 106px; } }
+
+#balkon {
+  height: auto;
+  width: 100%;
+  background-image: url("../../img/bg_3.png");
+  -webkit-animation: balkon 10s linear forwards;
+          animation: balkon 10s linear forwards; }
+
+#earth {
+  height: auto;
   width: 100%;
   background-image: url("../../img/space.jpg");
   -webkit-background-size: cover;
           background-size: cover;
-  animation: animatedBackground 100s linear infinite;
-  -moz-animation: animatedBackground 100s linear infinite;
-  -webkit-animation: animatedBackground 100s linear infinite;
-  -o-animation: animatedBackground 100s linear infinite; }
+  -webkit-animation: animatedBackground 13.0s linear forwards;
+          animation: animatedBackground 13.0s linear forwards; }
 
 @font-face {
   font-family: 'Roboto';
@@ -106,6 +161,10 @@ a {
   font-style: normal;
   font-stretch: normal;
   unicode-range: U+0020-00D8; }
+
+.fly_car {
+  position: absolute;
+  bottom: 0; }
 
 .header {
   background-color: #000000; }
@@ -188,13 +247,7 @@ a {
 .main_sect {
   -webkit-background-size: cover;
           background-size: cover; }
-  @media (min-width: 768px) and (max-width: 991px) {
-    .main_sect {
-      background: url("../../img/bg_2.png") -157px 264px no-repeat, url("../../img/bg_3.png") -600px -16px no-repeat, url("../../img/space.jpg") -1000px -700px no-repeat;
-      -webkit-background-size: auto, cover, cover;
-              background-size: auto, cover, cover; } }
   .main_sect .main_sect_container {
-    background: url("../../img/ball_01.png") 100px 106px no-repeat, url("../../img/ball_02.png") 269px 115px no-repeat, url("../../img/ball_03.png") 473px 188px no-repeat, url("../../img/ball_04.png") 632px 289px no-repeat, url("../../img/ball_05.png") 704px 380px no-repeat;
     position: relative;
     color: #ffffff;
     /*
@@ -233,6 +286,32 @@ a {
 		  margin-left: -50%;
 		}
 */ }
+    .main_sect .main_sect_container .ball_con {
+      margin-top: 101px;
+      background: transparent;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: end;
+      -webkit-align-items: flex-end;
+          -ms-flex-align: end;
+              align-items: flex-end;
+      list-style: none; }
+      .main_sect .main_sect_container .ball_con .ball {
+        margin-left: 12px; }
+      .main_sect .main_sect_container .ball_con .ball_1 {
+        margin-right: 23px;
+        margin-left: 57px; }
+      .main_sect .main_sect_container .ball_con .ball_3 {
+        margin-bottom: -28px;
+        margin-left: 38px; }
+      .main_sect .main_sect_container .ball_con .ball_4 {
+        margin-bottom: -88px;
+        margin-left: 27px; }
+      .main_sect .main_sect_container .ball_con .ball_5 {
+        margin-bottom: -229px;
+        margin-left: -2px; }
     .main_sect .main_sect_container .main_tittle {
       margin-top: 160px;
       font-size: 1.612em; }
@@ -268,6 +347,7 @@ a {
       margin-left: -50%;
       border-top: 115.47px solid #000000ab; }
     .main_sect .main_sect_container .info_about {
+      margin-left: 105px;
       margin-bottom: 146px;
       margin-top: 172px;
       padding-left: 66px;

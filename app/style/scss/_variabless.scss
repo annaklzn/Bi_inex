@@ -146,21 +146,61 @@ a{
 
 @keyframes animatedBackground {
     0 {
-        background-position: 0px 0px
+        background-position: -250px -200px
     }
     100% {
-        background-position: 0px -451px
+        background-position: 0px -60px
+    }
+}
+@keyframes balkon {
+
+    0 {
+    	background-size: 104%
+    }
+	25% {
+		background-size: 103%
+	}
+	50% {
+		background-size: 102%
+	}
+	75%{
+		background-size: 101%
+	}
+    100% {
+        background-size: 100%
+    }
+
+}
+@keyframes Ball{
+    0 {
+        background-position: 100px 106px
+    }
+    50%{
+		background-position: 100px 40px
+    }
+    100% {
+        background-position: 100px 106px
     }
 }
 
-#main_sect{
-	height: 100vh;
+
+#balkon{
+	height: auto;
+	width: 100%;
+	background-image: url("../../img/bg_3.png");
+	animation: balkon 10s linear forwards;
+	
+
+}
+
+#earth{
+	height: auto;
 	width:100%;
 	background-image: url("../../img/space.jpg");
 	background-size: cover;
-	animation: animatedBackground 100s linear infinite;
-	-moz-animation: animatedBackground 100s linear infinite;
-	-webkit-animation: animatedBackground 100s linear infinite;
- 	-o-animation: animatedBackground 100s linear infinite;
+	animation: animatedBackground 13.0s linear forwards;
+	
 	
 }
+
+
