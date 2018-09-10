@@ -1,0 +1,87 @@
+//keyframes
+
+
+@keyframes animatedBackground {
+    0 {
+        transform: translate(-750px, 0px)
+    }
+    100% {
+        transform: translate( 0px, -60px)
+    }
+}
+@keyframes balkon {
+
+    0 {
+    	background-size: 104%
+    }
+	25% {
+		background-size: 103%
+	}
+	50% {
+		background-size: 102%
+	}
+	75%{
+		background-size: 101%
+	}
+    100% {
+        background-size: 100%
+    }
+
+}
+@keyframes Ball_1{
+    0 {
+        transform: translate(0px, 25px)
+    }
+    50%{
+		transform: translate(0px, -32px)
+    }
+    100% {
+        transform: translate(0px, 7px)
+    }
+}
+//animate classes
+
+#balkon{
+	background-image: url("../../img/bg_3.png");
+	background-size: 104%;
+	background-position: center center;
+	animation: balkon 10s linear forwards;
+}
+
+#fly_car{
+	position: absolute;
+    transform: translate(-5%, 56%);
+
+}
+
+.ball_1{
+	animation: Ball_1 2s linear forwards infinite;
+}
+.ball_2{
+	animation: Ball_1 2.5s linear forwards infinite;
+	animation-delay: 0.5s;
+}
+.ball_3{
+	animation: Ball_1 1.7s linear forwards infinite;
+	animation-delay: 0s;
+}
+.ball_4{
+	animation: Ball_1 2.5s linear forwards infinite;
+	animation-delay: 0.5s;
+}
+.ball_4{
+	animation: Ball_1 2.5s linear forwards infinite;
+	animation-delay: 0s;
+}
+.ball_5{
+	animation: Ball_1 2.5s linear forwards infinite;
+	animation-delay: 0.5s;
+}
+#earth_1_img{
+	width:100%;
+	animation: animatedBackground 13.0s linear forwards;
+}
+.earth_1{
+	position: absolute;
+	z-index: -1;
+}

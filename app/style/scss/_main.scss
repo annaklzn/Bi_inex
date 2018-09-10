@@ -1,4 +1,6 @@
+
 .header{
+
 	background-color: $black;
 	@extend %USHText;
 	@extend %textUp;
@@ -17,6 +19,7 @@
 		.hamburder_icon{
 			position: absolute; 	
 		}
+
 		.nav_item{
 			z-index: 1;
 			display: inline-block;
@@ -24,15 +27,34 @@
 			color: $white;
 			font-size: 1.125em;
 			@include marginLR(0px, 25px);
+			.nav_item_hover{
+				position: absolute;
+				padding: 10px;
+				opacity: 0;
+				transform: translate(-16%, -41%);
+				
+				.orangehex{
+					position: relative;
+					
+
+				}
+				.orangehex_min{
+					position: absolute;
+					transform: translate(15%, -189%);
+				}
+			}
 			&:hover{
 				color: $orange;
+				
 			}
+
 		}
+/*
 		.nav_item:before{
 			content: "";
 			opacity: 0;
 			top: -48px;
-    		left: -43px;	
+    		left: -10px;	
 			position: absolute;
 			width: 200px;
 			height: 200px;
@@ -42,12 +64,13 @@
 			content: "";
 			opacity: 0;
 			top: -36px;
-    		left: -4px;
+    		left: 2px;
 			position: absolute;
 			width: 200px;
 			height: 200px;
 			background: url("../../img/hex3.png") no-repeat;
 		}
+*/
 	}
 	.head_select{
 		display: flex;
@@ -85,12 +108,40 @@
 
 .main_sect{
 	background-size: cover;
-	@include md{
-		background: url("../../img/bg_2.png") -157px 264px no-repeat, url("../../img/bg_3.png") -600px -16px no-repeat, url("../../img/space.jpg") -1000px -700px no-repeat;
-		background-size: auto, cover, cover;
+	
+	.main_sect_2{
+
 	}
 	.main_sect_container{
-		background: url("../../img/ball_01.png") 100px 106px no-repeat, url("../../img/ball_02.png") 269px 115px no-repeat, url("../../img/ball_03.png") 473px 188px no-repeat, url("../../img/ball_04.png") 632px 289px no-repeat, url("../../img/ball_05.png") 704px 380px no-repeat;
+		.ball_con{
+			margin-top: 101px;
+			background: transparent;
+			display: flex;
+    		align-items: flex-end;
+			list-style: none;
+			.ball{
+				margin-left: 12px;
+			}
+			.ball_1{
+				margin-right: 23px;
+    			margin-left: 57px;
+			}
+			.ball_2{
+			}
+			.ball_3{
+				margin-bottom: -28px;
+    			margin-left: 38px;
+			}
+			.ball_4{
+				margin-bottom: -88px;
+    			margin-left: 27px;
+			}
+			.ball_5{
+				margin-bottom: -229px;
+    			margin-left: -2px;
+			}
+
+		}
 		position: relative;
 		@extend %USHText;
 		color: $white;
@@ -137,7 +188,7 @@
 		}
 
 		.info_about{
-			
+			margin-left: 105px;
 			margin-bottom: 146px;
     		margin-top: 172px;
 			@include paddingLR(66px, 66px);
@@ -170,42 +221,6 @@
   				color: $white;
   				}
   			}
-  /*
-		.orangehex{
-			margin-top: 57px;
-			display: inline-block;
-			position: relative;
-  			width: 104px; 
-  			height: 60.04px;
-  			background-color: #f3a10dab;
-  			margin: 30.02px 0;
-  			z-index: 10;
-  			margin-top: 12px;
-  			
-  			}
-		.orangehex:before,
-		.orangehex:after {
-			  content: "";
-			  position: absolute;
-			  width: 0;
-			  border-left: 52px solid transparent;
-			  border-right: 52px solid transparent;
-			  margin-left: -50%;
-			}
-
-		.orangehex:before {
-		  bottom: 100%;
-		  border-bottom: 30.02px solid #f3a10dab;
-		  margin-left: -50%;
-		}
-
-		.orangehex:after {
-		  top: 100%;
-		  width: 0;
-		  border-top: 30.02px solid #f3a10dab;
-		  margin-left: -50%;
-		}
-*/
 
 		.scroll_down{
 			position: absolute;
