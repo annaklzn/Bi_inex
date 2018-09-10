@@ -23,6 +23,7 @@ a {
   a:hover {
     color: #f3a10d; }
 
+<<<<<<< HEAD
 /*
 .orangehex{
 	margin-top: 57px;
@@ -58,6 +59,85 @@ a {
 		margin-left: -50%;
 	}
 //orangehex_min
+=======
+@-webkit-keyframes animatedBackground {
+  0 {
+    background-position: -250px -200px; }
+  100% {
+    background-position: 0px -60px; } }
+
+@keyframes animatedBackground {
+  0 {
+    background-position: -250px -200px; }
+  100% {
+    background-position: 0px -60px; } }
+
+@-webkit-keyframes balkon {
+  0 {
+    -webkit-background-size: 104% 104%;
+            background-size: 104%; }
+  25% {
+    -webkit-background-size: 103% 103%;
+            background-size: 103%; }
+  50% {
+    -webkit-background-size: 102% 102%;
+            background-size: 102%; }
+  75% {
+    -webkit-background-size: 101% 101%;
+            background-size: 101%; }
+  100% {
+    -webkit-background-size: 100% 100%;
+            background-size: 100%; } }
+
+@keyframes balkon {
+  0 {
+    -webkit-background-size: 104% 104%;
+            background-size: 104%; }
+  25% {
+    -webkit-background-size: 103% 103%;
+            background-size: 103%; }
+  50% {
+    -webkit-background-size: 102% 102%;
+            background-size: 102%; }
+  75% {
+    -webkit-background-size: 101% 101%;
+            background-size: 101%; }
+  100% {
+    -webkit-background-size: 100% 100%;
+            background-size: 100%; } }
+
+@-webkit-keyframes Ball {
+  0 {
+    background-position: 100px 106px; }
+  50% {
+    background-position: 100px 40px; }
+  100% {
+    background-position: 100px 106px; } }
+
+@keyframes Ball {
+  0 {
+    background-position: 100px 106px; }
+  50% {
+    background-position: 100px 40px; }
+  100% {
+    background-position: 100px 106px; } }
+
+#balkon {
+  height: auto;
+  width: 100%;
+  background-image: url("../../img/bg_3.png");
+  -webkit-animation: balkon 10s linear forwards;
+          animation: balkon 10s linear forwards; }
+
+#earth {
+  height: auto;
+  width: 100%;
+  background-image: url("../../img/space.jpg");
+  -webkit-background-size: cover;
+          background-size: cover;
+  -webkit-animation: animatedBackground 13.0s linear forwards;
+          animation: animatedBackground 13.0s linear forwards; }
+>>>>>>> bebdfb258719eb04e68bd65c93f002e348dc917c
 
 .orangehex_min{
   	position: relative;
@@ -150,6 +230,10 @@ a {
   font-style: normal;
   font-stretch: normal;
   unicode-range: U+0020-00D8; }
+
+.fly_car {
+  position: absolute;
+  bottom: 0; }
 
 .header {
   background-color: #000000; }
@@ -252,7 +336,47 @@ a {
           background-size: cover; }
   .main_sect .main_sect_container {
     position: relative;
+<<<<<<< HEAD
     color: #ffffff; }
+=======
+    color: #ffffff;
+    /*
+		.orangehex{
+			margin-top: 57px;
+			display: inline-block;
+			position: relative;
+  			width: 104px; 
+  			height: 60.04px;
+  			background-color: #f3a10dab;
+  			margin: 30.02px 0;
+  			z-index: 10;
+  			margin-top: 12px;
+  			
+  			}
+		.orangehex:before,
+		.orangehex:after {
+			  content: "";
+			  position: absolute;
+			  width: 0;
+			  border-left: 52px solid transparent;
+			  border-right: 52px solid transparent;
+			  margin-left: -50%;
+			}
+
+		.orangehex:before {
+		  bottom: 100%;
+		  border-bottom: 30.02px solid #f3a10dab;
+		  margin-left: -50%;
+		}
+
+		.orangehex:after {
+		  top: 100%;
+		  width: 0;
+		  border-top: 30.02px solid #f3a10dab;
+		  margin-left: -50%;
+		}
+*/ }
+>>>>>>> bebdfb258719eb04e68bd65c93f002e348dc917c
     .main_sect .main_sect_container .ball_con {
       margin-top: 101px;
       background: transparent;
