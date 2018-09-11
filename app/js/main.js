@@ -24,7 +24,9 @@ var flyCar = function(){
 
 var header = function(){
 	$("#header").removeClass("d-none").addClass("d-block animated fadeInDown");
+	$("#header_kost").addClass("d-none");
 };
+
 
 var scroll = function(){
 	$("#scroll_down").removeClass("d-none");
@@ -41,8 +43,8 @@ $(window).load(function(){
  	$('#preloader').addClass("d-none");
 		setTimeout(ballIn, 0);
 		setTimeout(flyCar, 2000);
-		setTimeout(header, 8000);
-		setTimeout(mainT, 9000);
-		setTimeout(scroll, 9000);
+		setTimeout(header, 5000);
+		setTimeout(mainT, 6000);
+		setTimeout(scroll, 6000);
  }, 2000);
 });

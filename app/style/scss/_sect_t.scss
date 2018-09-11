@@ -1,0 +1,11 @@
+.sect_t{
+	background: url('../../sect_t_bg.jpeg');
+	position: center center;
+	.sect_t_cont{
+		.hexagon{
+			&:before, &:after{
+				margin-left: 0%;
+			}
+		}
+	}
+}

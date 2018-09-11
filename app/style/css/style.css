@@ -164,6 +164,9 @@ a {
   position: fixed;
   z-index: 100; }
 
+.margin_h {
+  margin-top: 255px; }
+
 @font-face {
   font-family: 'Roboto';
   src: url("../../fonts/Roboto Bold.woff2") format("woff2"), url("../../fonts/Roboto Bold.woff") format("woff");
@@ -286,6 +289,8 @@ a {
       -webkit-transform: translate(-33%, -32%);
           -ms-transform: translate(-33%, -32%);
               transform: translate(-33%, -32%); }
+  .header .header_kost {
+    height: 100px; }
   .header .head_select {
     text-transform: uppercase;
     width: 40px;
@@ -453,7 +458,9 @@ a {
     -webkit-transform: translate(0px, 7px);
             transform: translate(0px, 7px); } }
 
-#balkon {
+@-webkit-keyframes Header_width {}
+
+@keyframes Header_width {}#balkon {
   background-image: url("../../img/bg_3.png");
   background-repeat: no-repeat;
   -webkit-background-size: cover;
@@ -511,7 +518,6 @@ a {
           animation-delay: 0.5s; }
 
 #earth_1_img {
-  overflow: hidden;
   width: 100%;
   top: -10%;
   -webkit-animation: animatedBackground 7.0s linear forwards;
@@ -522,7 +528,7 @@ a {
 
 .earth_1 {
   position: absolute;
-  z-index: -2; }
+  z-index: -1; }
 
 .sect_two {
   background-image: url("../../img/sect_two_bg.jpg");

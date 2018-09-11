@@ -243,6 +243,7 @@ a{
     overflow-y: scroll;
 }
 .hex_text::-webkit-scrollbar {width:0px;}
+
 #preloader{
 	background: $black;
 	width: 100vw;
@@ -250,4 +251,7 @@ a{
 	top: 0;
 	position: fixed;
 	z-index: 100;
+}
+.margin_h{
+	margin-top: 255px;
 }

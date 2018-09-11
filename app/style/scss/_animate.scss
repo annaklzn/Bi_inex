@@ -39,6 +39,9 @@
         transform: translate(0px, 7px)
     }
 }
+@keyframes Header_width{
+		
+}
 
 
 //animate classes
@@ -86,7 +89,6 @@
 }
 #earth_1_img{
 
-	overflow: hidden;
 	width:100%;
 	top: -10%;
 	animation: animatedBackground 7.0s linear forwards;
@@ -96,5 +98,5 @@
 }
 .earth_1{
 	position: absolute;
-	z-index: -2;
+	z-index: -1;
 }
