@@ -30,6 +30,12 @@
     font-stretch: normal;
     unicode-range: U+0020-00BB;
 }
+@font-face {
+    font-family: 'Uni Sans';
+    src: url('../../fonts/UniSansSemiBold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
 //PT Sans
 
 @font-face {

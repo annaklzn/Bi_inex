@@ -70,6 +70,11 @@ $black: #000000;
 	font-family: 'Uni Sans Heavy Caps', sans-serif;
 	font-weight: 900;
 }
+%USRText{
+	font-family: 'Uni Sans', sana-serif;
+	font-weight: 400;
+}
+
 %RobotoBText{
 	font-family: 'RobotoB', sans-serif;
 	font-weight: 700;
@@ -115,4 +120,120 @@ a{
 		color: $orange;
 	}
 }
+.orange_tittle{
+	@extend %USHText;
+	font-size: 1.500em;
+	color: $orange;
+}
 
+
+.scroll_down{
+	@extend %USHText;
+	color: $white;
+	position: absolute;
+    font-size: 0.875em;
+    bottom: -5px;
+    left: 47%;
+	p{
+		text-align: center;
+	}
+}
+.join_us{
+	@extend %USHText;
+	position: absolute;
+    bottom: 4%;
+    right: 8%;
+}
+
+//learnBtn
+
+.info_btn{
+	width: 146px;
+    height: 125px;
+    margin: 10px 79px;
+	display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 10;
+   	position: absolute;
+    overflow: visible;
+    background: url(../../img/hex.png) 16px -2px no-repeat;
+	}
+.learn_m{
+	@extend %USHText;
+	font-size: 0.875em;
+	&:hover, &:active{
+  		text-decoration: none;
+  		color: $white;
+  		}
+  	}
+
+//hexagon
+.hexagon{
+	position: relative;
+	width: 432px; 
+	height: 249.42px;
+	background-color: #000000ab;
+	margin: 115.47px 0;
+	@include sm{
+	  	width: 325px;
+	  	height: 187.75px; 
+	  	}
+	}
+.hexagon:before,
+.hexagon:after {
+	content: "";
+	position: absolute;
+	width: 0;
+	border-left: 216px solid transparent;
+	border-right: 216px solid transparent;
+	margin-left: -50%;
+	@include sm{
+		border-left: 162px solid transparent;
+		border-right: 162px solid transparent;
+		}
+}
+
+.hexagon:before {
+	bottom: 100%;
+	border-bottom: 115.47px solid #000000ab;
+}
+.hexagon:after {
+	top: 100%;
+	margin-left: -50%;
+	border-top: 115.47px solid #000000ab;
+}
+
+.main_nav{ 
+	@extend %USHText;
+	position: absolute;
+    top: 39%;
+    right: 8%;
+	.main_nav_list{
+		list-style: none;
+		display: flex;
+	    flex-direction: column;
+	    align-items: flex-end;
+		.main_nav_item{
+			a{
+				text-decoration: none;
+				color: rgba(0,0,0, 0);
+				&:hover, &:active {
+					color: $white;
+				}
+			}
+			.main_nav_href{
+				padding-right: 20px;
+				}
+				.main_nav_item_icon{
+					display: inline-block;
+					width: 21px;
+					height: 23px;
+					background: url(../../img/main_nav.png) 0px 25px;
+					&:hover{
+						background: url(../../img/main_nav.png) 0px 0px;
+					}
+				}
+			}			
+	}
+}

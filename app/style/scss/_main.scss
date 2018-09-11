@@ -1,6 +1,4 @@
-
 .header{
-
 	background-color: $black;
 	@extend %USHText;
 	@extend %textUp;
@@ -47,30 +45,10 @@
 			}
 
 		}
-/*
-		.nav_item:before{
-			content: "";
-			opacity: 0;
-			top: -48px;
-    		left: -10px;	
-			position: absolute;
-			width: 200px;
-			height: 200px;
-			background: url("../../img/hex2.png") no-repeat;
-		}
-		.nav_item:after{
-			content: "";
-			opacity: 0;
-			top: -36px;
-    		left: 2px;
-			position: absolute;
-			width: 200px;
-			height: 200px;
-			background: url("../../img/hex3.png") no-repeat;
-		}
-*/
 	}
 	.head_select{
+		text-transform: uppercase;
+		@extend %USRText;
 		display: flex;
 		font-size: 0.875em;
     	align-items: center;
@@ -106,13 +84,9 @@
 
 .main_sect{
 	background-size: cover;
-	
-	.main_sect_2{
-
-	}
 	.main_sect_container{
 		.ball_con{
-			margin-top: 101px;
+			margin-top: 105px;
 			background: transparent;
 			display: flex;
     		align-items: flex-end;
@@ -144,51 +118,14 @@
 		@extend %USHText;
 		color: $white;
 		.main_tittle{
-			margin-top: 160px;
+			margin-top: 156px;
+   			margin-left: 76px;
 			font-size: 1.612em;
 		}
-		.hexagon{
-			margin-top: 115px;
-			position: relative;
-	  		width: 432px; 
-	  		height: 249.42px;
-	  		background-color: #000000ab;
-	  		margin: 115.47px 0;
-	  		@include sm{
-	  			width: 325px;
-	  			height: 187.75px; 
-	  		}
-		}
-		.hexagon:before,
-		.hexagon:after {
-			  content: "";
-			  position: absolute;
-			  width: 0;
-			  border-left: 216px solid transparent;
-			  border-right: 216px solid transparent;
-			  margin-left: -50%;
-			  @include sm{
-			  	border-left: 162px solid transparent;
-			  	border-right: 162px solid transparent;
-			  }
-
-			}
-
-		.hexagon:before {
-			  bottom: 100%;
-			  border-bottom: 115.47px solid #000000ab;
-		}
-
-		.hexagon:after {
-		  top: 100%;
-		  margin-left: -50%;
-		  border-top: 115.47px solid #000000ab;
-		}
-
 		.info_about{
-			margin-left: 105px;
-			margin-bottom: 146px;
-    		margin-top: 172px;
+			margin-left: 93px;
+   			margin-bottom: 188px;
+    		margin-top: 108px;
 			@include paddingLR(66px, 66px);
 			font-size: 0.875em;
 			text-align: center;
@@ -197,76 +134,15 @@
 			.info_tittle{
 				margin-bottom: 45px;
 				font-size: 1.875em;
+				animation-delay: 10s;
 			}
-		}
+			.info_about_text{
+				height: 140px;
+				overflow-x: hidden;
+    			overflow-y: scroll;
 
-		.info_btn{
-				width: 146px;
-    			height: 125px;
-    			margin: 29px 79px;
-				display: flex;
-    			align-items: center;
-    			justify-content: center;
-    			z-index: 10;
-   			 	position: absolute;
-    			overflow: visible;
-    			background: url(../../img/hex.png) 16px -2px no-repeat;
-		}
-		.learn_m{
-				
-  				&:hover, &:active{
-  				text-decoration: none;
-  				color: $white;
-  				}
-  			}
-
-		.scroll_down{
-			position: absolute;
-    		font-size: 0.875em;
-    		bottom: -5px;
-    		left: 47%;
-			p{
-				text-align: center;
 			}
-		}
-		.main_nav{ 
-			position: absolute;
-			top: 44%;
-			right: 10px;
-			.main_nav_list{
-				list-style: none;
-				display: flex;
-          		flex-direction: column;
-          		align-items: flex-end;
-				.main_nav_item{
-					a{
-						text-decoration: none;
-						color: rgba(0,0,0, 0);
-						&:hover, &:active {
-							color: $white;
-						}
-					}
-					.main_nav_href{
-						padding-right: 20px;
-					}
-					.main_nav_item_icon{
-						display: inline-block;
-						width: 21px;
-			    		height: 23px;
-			    		background: url(../../img/main_nav.png) 0px 25px;
-						&:hover{
-							background: url(../../img/main_nav.png) 0px 0px;
-						}
-					}
-				}
-				
-			}
-		}
-
-		.join_us{
-			position: absolute;
-    		bottom: 10px;
-    		right: 0;
+			.info_about_text::-webkit-scrollbar {width:0px;}
 		}
 	}
 }
