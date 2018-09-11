@@ -36,8 +36,13 @@ var scroll = function(){
 };
 
 
-setTimeout(ballIn, 1000);
-setTimeout(flyCar, 2000);
-setTimeout(header, 8000);
-setTimeout(mainT, 9000);
-setTimeout(scroll, 9000);
+$(window).load(function(){
+ setTimeout(function(){
+ 	$('#preloader').addClass("d-none");
+		setTimeout(ballIn, 0);
+		setTimeout(flyCar, 2000);
+		setTimeout(header, 8000);
+		setTimeout(mainT, 9000);
+		setTimeout(scroll, 9000);
+ }, 2000);
+});
