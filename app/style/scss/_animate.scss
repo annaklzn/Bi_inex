@@ -55,6 +55,9 @@
 #fly_car{
 	position: absolute;
 	transform: translate(-7%, 63%);
+	@include md{
+		transform: translate(-30%, 60%);
+	} 
 
 }
 
@@ -82,9 +85,13 @@
 	animation-delay: 0.5s;
 }
 #earth_1_img{
+
 	width:100%;
 	top: -10%;
 	animation: animatedBackground 7.0s linear forwards;
+	@include md{
+		top: 0;
+	}
 }
 .earth_1{
 	position: absolute;

@@ -94,7 +94,6 @@
 }
 
 .main_sect{
-	
 	.main_sect_container{
 		.ball_con{
 			margin-top: 105px;
@@ -104,6 +103,10 @@
 			list-style: none;
 			.ball{
 				margin-left: 12px;
+				@include md{
+					animation: none;
+					opasity: 0.6;
+				}
 			}
 			.ball_1{
 				margin-right: 23px;

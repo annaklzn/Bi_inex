@@ -35,8 +35,9 @@ var scroll = function(){
 	$("#main_nav_2").removeClass("d-none").addClass("animated bounceInRight");
 };
 
+
 setTimeout(ballIn, 1000);
 setTimeout(flyCar, 2000);
 setTimeout(header, 8000);
 setTimeout(mainT, 9000);
-setTimeout(scroll, 10000);
+setTimeout(scroll, 9000);
