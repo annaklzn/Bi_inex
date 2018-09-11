@@ -3,6 +3,7 @@
 	@extend %USHText;
 	@extend %textUp;
 	.header_cont{
+		overflow: hidden;
 		@include md{
 			justify-content: space-between;
 		}
@@ -17,7 +18,7 @@
 		.hamburder_icon{
 			position: absolute; 	
 		}
-
+		
 		.nav_item{
 			z-index: 1;
 			display: inline-block;
@@ -29,7 +30,7 @@
 				position: absolute;
 				padding: 10px;
 				opacity: 0;
-				transform: translate(-16%, -41%);
+				transform: translate(-12%, -32%);
 				
 				.orangehex{
 					position: relative;
@@ -43,11 +44,16 @@
 				color: $orange;
 				
 			}
-
+		}
+		.about{
+			.nav_item_hover{
+				transform: translate(-33%, -32%);
+			}
 		}
 	}
 	.head_select{
 		text-transform: uppercase;
+		width: 40px;;
 		@extend %USRText;
 		display: flex;
 		font-size: 0.875em;
@@ -55,7 +61,10 @@
 		color: $white;
 		background-color: $black;
 		border: none;
-
+		-webkit-appearance: none;
+  		-moz-appearance: none;
+  		appearance: none;
+  		background: url(../../img/sel_arr.png) 24px 49px no-repeat;
 		&:hover{
 			outline: 0;
 			color: $orange;
@@ -67,12 +76,14 @@
 			outline: 0;
 		}
 		.head_select_opt{
-			
+			background-color: $black;
 			&:hover{
 			outline: 0;
 			color: $orange;
+
 			}
 			&:active{
+				background-color: $black;
 				outline: 0;
 			}
 			&:focus{
@@ -83,7 +94,7 @@
 }
 
 .main_sect{
-	background-size: cover;
+	
 	.main_sect_container{
 		.ball_con{
 			margin-top: 105px;
