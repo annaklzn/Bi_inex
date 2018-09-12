@@ -39,8 +39,15 @@
         transform: translate(0px, 7px)
     }
 }
-@keyframes Header_width{
-		
+@keyframes success {
+    0%{
+        right: -150px;
+        opacity: 0;
+    }
+    100%{
+        right: 0px;
+        opacity: 1;
+    }
 }
 
 
@@ -57,7 +64,7 @@
 
 #fly_car{
 	position: absolute;
-	transform: translate(-7%, 63%);
+	transform: translate(-7%, 87%);
 	@include md{
 		transform: translate(-30%, 60%);
 	} 

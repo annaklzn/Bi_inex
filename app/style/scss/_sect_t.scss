@@ -1,11 +1,47 @@
 .sect_t{
-	background: url('../../sect_t_bg.jpeg');
+	color: $white;
+	@extend %USHText;
+	background: url('../../img/sect_t_bg.jpg');
 	position: center center;
+	overflow: hidden;
 	.sect_t_cont{
+		margin-top: 100px;
+		position: relative;
 		.hexagon{
 			&:before, &:after{
 				margin-left: 0%;
 			}
 		}
+		.hex_2{
+			margin-top: 20%;
+			margin-left: 93px;
+		}
+		.hex_1{
+			margin-top: 8%;
+			margin-left: 35px;
+		}
+		.hex_4{
+			transform: translate(71%, -48%);
+		}
+		.t_hex_info{
+			font-size: 0.875em;
+			margin-top: -5px;
+			@include paddingLR(66px, 66px);
+			text-align: center;
+			.hex_tittle{
+				margin-bottom: 26px;
+				font-size: 1.875em;
+			}
+		}
+		.info_btn{
+			transform: translate(46%, 10%);
+		}
+		.watch_video{
+			transform: translate(106%, -4%);
+			.video_btn{
+				transform: translate(24%,-148%);
+			}
+		}
+
 	}
 }

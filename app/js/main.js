@@ -6,7 +6,6 @@ $(document).ready(function() {
         });
 });
 
-
 var ballIn = function(){
 	$('#ball_con').addClass("animated slideInRight");
 	
@@ -24,7 +23,6 @@ var flyCar = function(){
 
 var header = function(){
 	$("#header").removeClass("d-none").addClass("d-block animated fadeInDown");
-	$("#header_kost").addClass("d-none");
 };
 
 
@@ -47,4 +45,17 @@ $(window).load(function(){
 		setTimeout(mainT, 6000);
 		setTimeout(scroll, 6000);
  }, 2000);
+ /*
+ 	$('#fullpage').fullpage({
+ 		anchors:['main_sect', 'sect_two', 'sect_t', 'sect_four', 'sect_five'],
+		navigation: false,
+     	navigationPosition: 'right',
+     	scrollBar: false,
+     	fixedElements: 'footer',
+     	dragAndMove: 'fingersonly',
+     	normalScrollElements: '#normalScroll,',
+     	showActiveTooltip: true
+	});
+*/
 });
+

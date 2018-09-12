@@ -2,6 +2,9 @@
 	background-color: $black;
 	@extend %USHText;
 	@extend %textUp;
+	position: fixed;
+    z-index: 100;
+    width: 100%;
 	.header_cont{
 		overflow: hidden;
 		@include md{
@@ -52,9 +55,6 @@
 			}
 		}
 	}
-.header_kost{
-	height: 100px;
-}
 	.head_select{
 		text-transform: uppercase;
 		width: 40px;;
@@ -100,7 +100,7 @@
 .main_sect{
 	.main_sect_container{
 		.ball_con{
-			margin-top: 105px;
+			margin-top: 200px;
 			background: transparent;
 			display: flex;
     		align-items: flex-end;

@@ -4,6 +4,7 @@
 	color: $white;
 	overflow: hidden;
 	.sect_two_container{
+		
 		position: relative;
 		.hexagon{
 			&:before, &:after{
@@ -19,7 +20,7 @@
 			h3{
 				margin-bottom: 27px;
 			}
-			.hex_1_text{
+			.hex_text{
 				@extend %PTSansText;
 				font-size: 1em;
 			}
@@ -34,7 +35,7 @@
 				@extend %USHText;
 				margin-bottom: 57px;
 			}
-			.hex_2_text{
+			.hex_text{
 				position: relative;
 				@extend %RobotoText;
 				font-size: 1em;
@@ -57,7 +58,7 @@
 			h3{
 				margin-bottom: 26px;	
 			}
-			.hex_4_text{
+			.hex_text{
 				@extend %USHText;
 				font-size: 0.86em;
 			}
@@ -70,8 +71,5 @@
 			@include paddingLR(66px, 66px);
 			text-align: center;
 		}
-	}
-	.scroll_down{
-
 	}
 }
