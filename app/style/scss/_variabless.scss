@@ -15,8 +15,14 @@ $black: #000000;
 	
 
 //Media 
+
 @mixin xl {
   @media (min-width: 1200px) {
+    @content;
+  }
+}
+@mixin ml{
+	@media (min-width: 1200px) and (max-width: 1600px) {
     @content;
   }
 }
@@ -108,12 +114,6 @@ $black: #000000;
 html{
 	font-size: 16px;
 }
-.container {
-	@include xl{
-		width: 1264px;
-	}
-}
-
 a{
 	color: $white;
 	&:hover{
@@ -134,15 +134,33 @@ a{
     font-size: 0.875em;
     bottom: 24px;
     left: 47%;
+    transition: all .5s ease-in-out;
+    .anime{
+    	animation: MouseOn 2s ease-in-out forwards infinite;
+    	&:hover{
+    		animation: none;
+    		bottom: 30px;
+
+    	}
+    }
 	p{
 		text-align: center;
+	}
+	@include md{
+		bottom: -22%;
+    	left: 47%;
 	}
 }
 .join_us{
 	@extend %USHText;
 	position: absolute;
-    bottom: 4%;
-    right: 8%;
+    bottom: 5%;
+    right: 7%;
+    @include md{
+    	bottom: -21%;
+    	right: 3%;
+    }
+
 }
 
 //learnBtn
@@ -176,9 +194,9 @@ a{
 	background-color: #000000ab;
 	margin: 115.47px 0;
 	@include md{
-	  	width: 301px;
-	  	height: 187.75px;
-		margin: 86.60px 0;
+	  	width: 325px;
+	  	height: 187.64px;
+		margin: 93.82px 0;
 	  	}
 	}
 .hexagon:before,
@@ -190,8 +208,8 @@ a{
 	border-right: 216px solid transparent;
 	margin-left: -50%;
 	@include md{
-		border-left: 150px solid transparent;
-  		border-right: 150px solid transparent;
+		border-left: 162.5px solid transparent;
+  		border-right: 162.5px solid transparent;
 		}
 }
 
@@ -199,7 +217,7 @@ a{
 	bottom: 100%;
 	border-bottom: 115.47px solid #000000ab;
 	@include md{
-		border-bottom: 86.60px solid #000000ab;
+		border-bottom: 93.82px solid #000000ab;
 	}
 }
 .hexagon:after {
@@ -207,17 +225,17 @@ a{
 	margin-left: -50%;
 	border-top: 115.47px solid #000000ab;
 	@include md{
-		border-top: 86.60px solid #000000ab;
+		border-top: 93.82px solid #000000ab;
 	}
 }
 
 .main_nav{ 
 	@extend %USHText;
 	position: absolute;
-    top: 47%;
+    top: 46%;
     right: 8%;
     @include md{
-    	top: 68%;
+    	top: 56%;
     	right: 3%;
     }
 	.main_nav_list{
