@@ -47,6 +47,7 @@ $(window).load(function(){
 		setTimeout(scroll, 6000);
  }, 2000);
  	
+<<<<<<< HEAD
 // 	$('#fullpage').fullpage({
 // 		anchors:['main_sect', 'sect_two', 'sect_t', 'sect_four', 'sect_five', 'sect_six', 'footer'],
 //		navigation: false,
@@ -57,5 +58,17 @@ $(window).load(function(){
 //     	showActiveTooltip: true
 //	});
 //	
+=======
+ 	$('#fullpage').fullpage({
+ 		anchors:['#main_sect', '#sect_two', '#sect_t', '#sect_four', '#sect_five', '#sect_six', '#footer'],
+		navigation: false,
+     	navigationPosition: 'right',
+     	scrollBar: false,
+     	dragAndMove: 'fingersonly',
+     	normalScrollElements: '#normalScroll,',
+     	showActiveTooltip: true
+	});
+	
+>>>>>>> e90590d1de925c8a60b65f43feb069eff20b08fc
 });
 

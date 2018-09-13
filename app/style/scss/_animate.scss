@@ -3,10 +3,10 @@
 
 @keyframes animatedBackground {
     0 {
-        transform: translate(-750px, 0px)
+        transform: translate(-550px, 0px)
     }
     100% {
-        transform: translate( 0px, -60px)
+        transform: translate( 0px, -160px)
     }
 }
 @keyframes balkon {
@@ -39,6 +39,18 @@
         transform: translate(0px, 7px)
     }
 }
+@keyframes MouseOn{
+	0{
+		transform: translate(0px, 0px)
+	}
+	50%{
+		transform: translate(0px, -11px)	
+	}
+	100%{
+		transform: translate(0px, 0px)	
+	}
+}
+
 
 //animate classes
 
@@ -48,12 +60,12 @@
 	background-repeat: no-repeat;
 	background-size: cover;
 	transform: scale(1.04);
-	background-position: center center;
+	background-position-y: 78%;
 	animation: balkon 6s linear forwards;
 	@include md{
 		animation: none;
 		transform: scale(1.0);
-		background-position-y: 158px;
+		background-position-y: -143px;
 		background-position-x: 51%;
 		background-size: 215%;
 
@@ -62,9 +74,9 @@
 
 #fly_car{
 	position: absolute;
-	transform: translate(-7%, 101%);
+	transform: translate(-7%, 78%);
 	@include md{
-		transform: translate(-32%, 146%) scale(0.9)
+		transform: translate(-31%, 79%) scale(0.8);
 	} 
 	@include lg{
 		transform: translate(-20%, 50%) scale(0.7);
@@ -96,14 +108,14 @@
 	animation: Ball 2.5s linear forwards infinite;
 	animation-delay: 0.5s;
 	@include md{
-		transform: translate(-93%, 243%) scale(0.6)
+		transform: translate(-93%, 243%) scale(0.6);
 	}
 }
 .ball_4{
 	animation: Ball 2.5s linear forwards infinite;
 	animation-delay: 0s;
 	@include md{
-		transform: translate(-351%, 459%) scale(0.6)
+		transform: translate(-361%, 395%) scale(0.6);
 	}
 }
 .ball_5{
@@ -111,6 +123,7 @@
 	animation-delay: 0.5s;
 	@include md{
 		transform: translate(-800%, 973%) scale(0.8);
+		transform: translate(-813%, 823%) scale(0.8);
 	}
 }
 #earth_1_img{
@@ -120,10 +133,17 @@
 	animation: animatedBackground 7.0s linear forwards;
 	@include md{
 		animation: none;
-		transform: translate(0%, 120%) scale(2);
+		transform: translate(-13%, 30%) scale(2);
 	}
+	
 }
 .earth_1{
 	position: absolute;
 	z-index: -1;
+	@include ml{
+		transform: translate(0%, 34%);
+	}
+	@include lg{
+		transform: translate(0%, 54%);
+	}
 }
