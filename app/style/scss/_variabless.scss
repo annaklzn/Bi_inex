@@ -175,9 +175,10 @@ a{
 	height: 249.42px;
 	background-color: #000000ab;
 	margin: 115.47px 0;
-	@include sm{
-	  	width: 325px;
-	  	height: 187.75px; 
+	@include md{
+	  	width: 301px;
+	  	height: 187.75px;
+		margin: 86.60px 0;
 	  	}
 	}
 .hexagon:before,
@@ -188,20 +189,26 @@ a{
 	border-left: 216px solid transparent;
 	border-right: 216px solid transparent;
 	margin-left: -50%;
-	@include sm{
-		border-left: 162px solid transparent;
-		border-right: 162px solid transparent;
+	@include md{
+		border-left: 150px solid transparent;
+  		border-right: 150px solid transparent;
 		}
 }
 
 .hexagon:before {
 	bottom: 100%;
 	border-bottom: 115.47px solid #000000ab;
+	@include md{
+		border-bottom: 86.60px solid #000000ab;
+	}
 }
 .hexagon:after {
 	top: 100%;
 	margin-left: -50%;
 	border-top: 115.47px solid #000000ab;
+	@include md{
+		border-top: 86.60px solid #000000ab;
+	}
 }
 
 .main_nav{ 
@@ -210,8 +217,8 @@ a{
     top: 47%;
     right: 8%;
     @include md{
-    	top: 57%;
-    	right: 2%;
+    	top: 68%;
+    	right: 3%;
     }
 	.main_nav_list{
 		list-style: none;

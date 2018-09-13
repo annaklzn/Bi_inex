@@ -53,7 +53,7 @@
 	@include md{
 		animation: none;
 		transform: scale(1.0);
-		background-position-y: 199px;
+		background-position-y: 158px;
 		background-position-x: 51%;
 		background-size: 215%;
 
@@ -62,7 +62,7 @@
 
 #fly_car{
 	position: absolute;
-	transform: translate(-7%, 86%);
+	transform: translate(-7%, 101%);
 	@include md{
 		transform: translate(-32%, 146%) scale(0.9)
 	} 
@@ -75,21 +75,21 @@
 .ball_1{
 	animation: Ball 2s linear forwards infinite;
 	@include md{
-		transform: translate(-89%, 238%) scale(0.6);
+		transform: translate(-89%, 213%) scale(0.6);
 	}
 }
 .ball_2{
 	animation: Ball 2.5s linear forwards infinite;
 	animation-delay: 0.5s;
 	@include md{
-		transform: translate(-93%, 243%) scale(0.6)
+		transform: translate(-93%, 217%) scale(0.6);
 	}
 }
 .ball_3{
 	animation: Ball 1.7s linear forwards infinite;
 	animation-delay: 0s;
 	@include md{
-		transform: translate(-160%, 268%) scale(0.6)
+		transform: translate(-161%, 238%) scale(0.6);
 	}
 }
 .ball_4{
