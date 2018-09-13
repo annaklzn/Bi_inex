@@ -36,6 +36,7 @@ var scroll = function(){
 };
 
 
+
 $(window).load(function(){
  setTimeout(function(){
  	$('#preloader').addClass("d-none");
@@ -45,7 +46,7 @@ $(window).load(function(){
 		setTimeout(mainT, 6000);
 		setTimeout(scroll, 6000);
  }, 2000);
- /*
+ 	/*
  	$('#fullpage').fullpage({
  		anchors:['main_sect', 'sect_two', 'sect_t', 'sect_four', 'sect_five'],
 		navigation: false,
@@ -56,6 +57,6 @@ $(window).load(function(){
      	normalScrollElements: '#normalScroll,',
      	showActiveTooltip: true
 	});
-*/
+	*/
 });
 

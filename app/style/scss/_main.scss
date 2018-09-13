@@ -105,10 +105,14 @@
 			display: flex;
     		align-items: flex-end;
 			list-style: none;
+			@include md{
+
+			}
 			.ball{
 				margin-left: 12px;
 				@include md{
 					animation: none;
+					opacity: 0.6;
 
 				}
 			}
@@ -137,9 +141,14 @@
 		@extend %USHText;
 		color: $white;
 		.main_tittle{
-			margin-top: 156px;
+			margin-top: 30%;
    			margin-left: 76px;
 			font-size: 1.612em;
+			@include md{
+				margin-top: 32%;
+    			margin-left: 388px;
+    			font-size: 1.86em;
+			}
 		}
 		.info_about{
 			margin-left: 93px;

@@ -132,7 +132,7 @@ a{
 	color: $white;
 	position: absolute;
     font-size: 0.875em;
-    bottom: -5px;
+    bottom: 24px;
     left: 47%;
 	p{
 		text-align: center;
@@ -207,8 +207,12 @@ a{
 .main_nav{ 
 	@extend %USHText;
 	position: absolute;
-    top: 39%;
+    top: 47%;
     right: 8%;
+    @include md{
+    	top: 57%;
+    	right: 2%;
+    }
 	.main_nav_list{
 		list-style: none;
 		display: flex;
