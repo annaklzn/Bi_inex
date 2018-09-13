@@ -7,7 +7,7 @@
 .opacity {
   opacity: 0; }
 
-.orange_tittle, .scroll_down, .join_us, .learn_m, .main_nav, .header, .main_sect .main_sect_container, .sect_two .sect_two_container .sect_two_hex_2 h3, .sect_two .sect_two_container .sect_two_hex_4 .hex_text, .sect_t, .sect_four, .sect_five .sect_five_cont .t_hex_info, .sect_five .sect_five_cont .img_cont .overlay .overlay_text, .sect_six .sect_six_cont .hex_1 .t_hex_info, .footer .footer_cont .f_menu h3, .footer .social h3 {
+.orange_tittle, .scroll_down, .join_us, .learn_m, .main_nav, .header, .main_sect .main_sect_container, .sect_two .sect_two_container .sect_two_hex_2 h3, .sect_two .sect_two_container .sect_two_hex_4 .hex_text, .sect_t, .sect_four, .sect_five .sect_five_cont .t_hex_info, .sect_six .sect_six_cont .hex_1 .t_hex_info, .footer .footer_cont .f_menu h3, .footer .social h3 {
   font-family: 'Uni Sans Heavy Caps', sans-serif;
   font-weight: 900; }
 
@@ -758,19 +758,9 @@ a {
           -ms-transform: translate(45%, 10%);
               transform: translate(45%, 10%); }
     .sect_five .sect_five_cont .img_cont .overlay {
-      position: absolute;
-      top: 0;
-      bottom: 0;
-      left: 0;
-      right: 0;
-      height: 100%;
-      width: 100%;
-      opacity: 1;
-      background: url("../../img/hex4.png") no-repeat; }
+      position: absolute; }
       .sect_five .sect_five_cont .img_cont .overlay .overlay_text {
-        position: absolute;
-        color: #ffffff;
-        font-size: 0.875em; }
+        position: absolute; }
         .sect_five .sect_five_cont .img_cont .overlay .overlay_text .ov_txt {
           font-size: 0.75em; }
     .sect_five .sect_five_cont .img_cont .hex_tb_1 {
@@ -785,12 +775,17 @@ a {
       margin: -59% 10% 24%; }
 
 .sect_six {
+  position: relative;
   background: url("../../img/sect_six_bg.jpg") no-repeat;
-  position: center center;
-  overflow: hidden; }
+  background-position: center center;
+  -webkit-background-size: cover;
+          background-size: cover;
+  overflow: hidden;
+  height: 940px; }
   .sect_six .sect_six_cont {
     margin-top: 100px;
-    position: relative; }
+    position: relative;
+    height: 940px; }
     .sect_six .sect_six_cont .point_hex {
       position: relative;
       width: 300px;
@@ -815,12 +810,17 @@ a {
     .sect_six .sect_six_cont .point {
       color: #ffffff;
       text-align: center;
-      position: relative; }
+      position: relative;
+      display: none; }
       .sect_six .sect_six_cont .point .hex_socials {
         display: -webkit-box;
         display: -webkit-flex;
         display: -ms-flexbox;
-        display: flex; }
+        display: flex;
+        -webkit-box-pack: center;
+        -webkit-justify-content: center;
+            -ms-flex-pack: center;
+                justify-content: center; }
         .sect_six .sect_six_cont .point .hex_socials .social_icon {
           margin-top: -7px;
           font-size: 16px;
@@ -828,16 +828,11 @@ a {
           margin-left: 7px; }
           .sect_six .sect_six_cont .point .hex_socials .social_icon:hover {
             color: #f3a10d; }
-      .sect_six .sect_six_cont .point .point_img {
-        position: absolute;
-        bottom: 29%;
-        left: 46%; }
     .sect_six .sect_six_cont .hexagon:before, .sect_six .sect_six_cont .hexagon:after {
       margin-left: 0; }
     .sect_six .sect_six_cont .hex_1 {
-      margin-top: 8%;
-      margin-left: 35px;
-      margin-right: 60px;
+      position: absolute;
+      top: 30%;
       color: #ffffff; }
       .sect_six .sect_six_cont .hex_1 .t_hex_info {
         color: #ffffff;
@@ -857,6 +852,8 @@ a {
             -ms-transform: translate(227%, 37%);
                 transform: translate(227%, 37%);
         backgroung: none; }
+  .sect_six .main_nav {
+    top: 25%; }
 
 .footer {
   background-color: #000000;

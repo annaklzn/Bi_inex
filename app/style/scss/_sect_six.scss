@@ -1,10 +1,14 @@
 .sect_six{
+	position: relative;
 	background: url('../../img/sect_six_bg.jpg') no-repeat;
-	position: center center;
+	background-position: center center;
+	background-size: cover;
 	overflow: hidden;
+	height: 940px;
 	.sect_six_cont{
 		margin-top: 100px;
 		position: relative;
+		height: 940px;
 		.point_hex{
 			position: relative;
   			width: 300px; 
@@ -37,23 +41,20 @@
 			color: $white;
 			text-align: center;
 			position: relative;
+			display: none;
 			.hex_socials{
 				display: flex;
+				justify-content: center;
 				.social_icon{
 					margin-top: -7px;
 					font-size: 16px;
 					color: $white;
 					margin-left: 7px;
-					&:hover{
-					color: $orange;
-			}	
+					&:hover {
+						color: $orange;
+					}	
 				}
 
-			}
-			.point_img{
-				position: absolute;
-				bottom: 29%;
-				left: 46%;
 			}
 		}
 
@@ -63,11 +64,9 @@
 			}
 		}
 		.hex_1{
-			margin-top: 8%;
-			margin-left: 35px;
-			margin-right: 60px;
+			position: absolute;
+			top: 30%;
 			color: $white;
-
 			.t_hex_info{
 				@extend %USHText;
 				color: $white;
@@ -89,4 +88,11 @@
 			}
 		}
 	}
+	.main_nav {
+		top: 25%;
+	}
+	
+	// Map marks
+	
+	
 }

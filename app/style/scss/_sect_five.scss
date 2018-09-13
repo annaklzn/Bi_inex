@@ -36,19 +36,19 @@
 		.img_cont{
 			.overlay{
 				position: absolute;
-				top: 0;
-				bottom: 0;
-				left: 0;
-				right: 0;
-				height: 100%;
-				width: 100%;
-				opacity: 1;
-				background: url('../../img/hex4.png') no-repeat;
+//				top: 0;
+//				bottom: 0;
+//				left: 0;
+//				right: 0;
+//				height: 100%;
+//				width: 100%;
+//				opacity: 1;
+//				background: url('../../img/hex4.png') no-repeat;
 				.overlay_text{
 					position: absolute;
-					color: $white;
-					@extend %USHText;
-					font-size: 0.875em;
+//					color: $white;
+//					@extend %USHText;
+//					font-size: 0.875em;
 					.ov_txt{
 						@extend %PTSansText;
 						font-size: 0.75em;
