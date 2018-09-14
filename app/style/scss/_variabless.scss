@@ -194,8 +194,8 @@ a{
 	background-color: #000000ab;
 	margin: 115.47px 0;
 	@include md{
-	  	width: 325px;
-	  	height: 187.64px;
+	  	width: 383px;
+	  	height: 235.64px;
 		margin: 93.82px 0;
 	  	}
 	}
@@ -208,9 +208,9 @@ a{
 	border-right: 216px solid transparent;
 	margin-left: -50%;
 	@include md{
-		border-left: 162.5px solid transparent;
-  		border-right: 162.5px solid transparent;
-		}
+		border-left: 190.5px solid transparent;
+  		border-right: 190.5px solid transparent;
+	}
 }
 
 .hexagon:before {

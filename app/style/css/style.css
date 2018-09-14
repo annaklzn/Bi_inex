@@ -102,8 +102,8 @@ a {
   margin: 115.47px 0; }
   @media (min-width: 768px) and (max-width: 991px) {
     .hexagon {
-      width: 325px;
-      height: 187.64px;
+      width: 383px;
+      height: 235.64px;
       margin: 93.82px 0; } }
 
 .hexagon:before,
@@ -117,8 +117,8 @@ a {
   @media (min-width: 768px) and (max-width: 991px) {
     .hexagon:before,
     .hexagon:after {
-      border-left: 162.5px solid transparent;
-      border-right: 162.5px solid transparent; } }
+      border-left: 190.5px solid transparent;
+      border-right: 190.5px solid transparent; } }
 
 .hexagon:before {
   bottom: 100%;
@@ -261,6 +261,10 @@ a {
   font-style: normal;
   font-stretch: normal;
   unicode-range: U+0020-00D8; }
+
+html {
+  position: relative;
+  min-height: 100%; }
 
 .header {
   background-color: #000000;
@@ -836,6 +840,9 @@ a {
               transform: translate(45%, 10%); }
     .sect_five .sect_five_cont .img_cont {
       margin-left: 3rem; }
+      @media (min-width: 992px) and (max-width: 1199px) {
+        .sect_five .sect_five_cont .img_cont {
+          margin-left: -2rem; } }
       .sect_five .sect_five_cont .img_cont .overlay {
         position: absolute;
         top: 0;
@@ -870,7 +877,7 @@ a {
   -webkit-background-size: cover;
           background-size: cover;
   overflow: hidden;
-  height: 940px; }
+  height: 100vh; }
   .sect_six .sect_six_cont {
     margin-top: 100px;
     position: relative;
@@ -924,6 +931,10 @@ a {
       top: 27%;
       left: 9%;
       color: #ffffff; }
+      @media (min-width: 768px) and (max-width: 991px) {
+        .sect_six .sect_six_cont .hex_1 {
+          top: 50%;
+          left: 26%; } }
       .sect_six .sect_six_cont .hex_1 .t_hex_info {
         color: #ffffff;
         font-size: 0.875em;
@@ -931,6 +942,11 @@ a {
         padding-left: 66px;
         padding-right: 66px;
         text-align: center; }
+
+@inlcude md {
+  .sect_six .sect_six_cont .hex_1 .t_hex_info {
+    padding-left: 40px;
+    padding-right: 40px; } }
         .sect_six .sect_six_cont .hex_1 .t_hex_info .hex_title {
           font-size: 1.5em;
           margin-bottom: 40px; }
@@ -942,36 +958,67 @@ a {
             -ms-transform: translate(227%, 37%);
                 transform: translate(227%, 37%);
         backgroung: none; }
+        @media (min-width: 768px) and (max-width: 991px) {
+          .sect_six .sect_six_cont .hex_1 .sect_six_btn {
+            -webkit-transform: translate(192%, 37%);
+                -ms-transform: translate(192%, 37%);
+                    transform: translate(192%, 37%); } }
   .sect_six .main_nav {
     top: 25%; }
   .sect_six .mp-marks-item {
     position: absolute; }
   .sect_six .mp-marks-item.one {
-    top: 23%;
-    left: 44%; }
+    top: 25%;
+    left: 43%; }
   .sect_six .mp-marks-item.two {
-    top: 23%;
-    left: 51.5%; }
+    top: 25%;
+    left: 52%; }
   .sect_six .mp-marks-item.third {
-    top: 19%;
+    top: 21%;
     left: 54%; }
   .sect_six .mp-marks-item.fourth {
-    top: 18%;
+    top: 20%;
     left: 57.5%; }
   .sect_six .mp-marks-item.five {
     top: 16.5%;
-    left: 39%; }
+    left: 37%; }
   .sect_six .mp-marks-item.six {
     top: 100px;
-    left: 151px; }
+    left: 47px; }
+    @media (min-width: 992px) and (max-width: 1199px) {
+      .sect_six .mp-marks-item.six {
+        top: 114px;
+        left: -39px; } }
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .sect_six .sect_six_cont .hex_1 .hex_text {
+    font-size: 1.2em; } }
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .sect_six .sect_six_cont .hex_1 .t_hex_info .orange_tittle.hex_tittle {
+    font-size: 2em; } }
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .sect_six .sect_six_cont .scroll_down {
+    bottom: -9%;
+    left: 53%;
+    -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+            transform: translateX(-50%); } }
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .sect_six .sect_six_cont .join_us {
+    bottom: -10%; } }
 
 .footer {
   background-color: #000000;
   color: #ffffff;
   font-size: 0.75em;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  height: 100vh; }
   .footer .footer_cont {
-    position: relative; }
+    position: relative;
+    margin-top: 100px; }
     .footer .footer_cont .f_menu {
       text-transform: uppercase;
       display: -webkit-box;
@@ -1024,3 +1071,5 @@ a {
   .footer .join_us {
     bottom: 10%;
     right: 8%; }
+  .footer .fp-tableCell {
+    vertical-align: inherit; }

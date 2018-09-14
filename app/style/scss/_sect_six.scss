@@ -4,7 +4,7 @@
 	background-position: center center;
 	background-size: cover;
 	overflow: hidden;
-	height: 940px;
+	height: 100vh;
 	.sect_six_cont{
 		margin-top: 100px;
 		position: relative;
@@ -68,6 +68,10 @@
 			top: 27%;
 			left: 9%;
 			color: $white;
+			@include md {
+				top: 50%;
+				left: 26%;
+			}
 			.t_hex_info{
 				@extend %USHText;
 				color: $white;
@@ -75,6 +79,9 @@
 				margin-top: -5px;
 				@include paddingLR(66px, 66px);
 				text-align: center;
+				@inlcude md {
+					@include paddingLR(40px, 40px);
+				}
 				.hex_title{
 					font-size: 1.5em;
 					margin-bottom: 40px;
@@ -86,6 +93,9 @@
     			overflow: visible;
 				transform: translate(227%, 37%);
 				backgroung: none;
+				@include md {
+					transform: translate(192%, 37%);	
+				}				
 			}
 		}
 	}
@@ -99,31 +109,62 @@
 	}
 	
 	.mp-marks-item.one {
-		top: 23%;
-		left: 44%;
+		top: 25%;
+		left: 43%;
 	}
 	
 	.mp-marks-item.two {
-		top: 23%;
-		left: 51.5%;
+		top: 25%;
+		left: 52%;
 	} 
 	.mp-marks-item.third {
-		top: 19%;
+		top: 21%;
 		left: 54%;
 	}
 	
 	.mp-marks-item.fourth {
-		top: 18%;
+		top: 20%;
 		left: 57.5%;
 	}
 	
 	.mp-marks-item.five {
 		top: 16.5%;
-		left: 39%;
+		left: 37%;
 	}
 	
 	.mp-marks-item.six {
 		top: 100px;
-		left: 151px;
+		left: 47px;
+		@include lg {
+			top: 114px;
+			left: -39px;
+		}
 	}
 }
+
+.sect_six .sect_six_cont .hex_1 .hex_text {
+	@include md {
+		font-size: 1.2em;
+	}
+}
+
+.sect_six .sect_six_cont .hex_1 .t_hex_info .orange_tittle.hex_tittle {
+	@include md {
+		font-size: 2em;
+	}
+} 
+
+.sect_six .sect_six_cont .scroll_down {
+	@include md {
+		bottom: -9%;
+		left: 53%;
+		transform: translateX(-50%);
+	}
+}
+
+.sect_six .sect_six_cont .join_us {
+	@include md {
+		bottom: -10%;
+	}
+}
+
