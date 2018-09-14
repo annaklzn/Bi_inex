@@ -65,11 +65,9 @@
 	@include md{
 		animation: none;
 		transform: scale(1.0);
-		background-position-y: -130px;
+		background-position-y: -250px;
 		background-position-x: 51%;
-		background-size: 215%;
-		
-
+		background-size: 240%;
 	}
 	@include lg{
 		animation: none;
@@ -108,12 +106,18 @@
 	@include md{
 		transform: translate(-89%, 213%) scale(0.6);
 	}
+	@include sm{
+		transform: translate(-89%, 95%) scale(0.6);
+	}
 }
 .ball_2{
 	animation: Ball 2.9s linear forwards infinite;
 	animation-delay: 0.5s;
 	@include md{
 		transform: translate(-93%, 217%) scale(0.6);
+	}	
+	@include sm{
+		transform: translate(-93%, 82%) scale(0.6);
 	}
 }
 .ball_3{
@@ -121,13 +125,9 @@
 	animation-delay: 0s;
 	@include md{
 		transform: translate(-161%, 238%) scale(0.6);
-	}
-}
-.ball_4{
-	animation: Ball 2.9s linear forwards infinite;
-	animation-delay: 0.5s;
-	@include md{
-		transform: translate(-93%, 243%) scale(0.6);
+	}	
+	@include sm{
+		transform: translate(-161%, 72%) scale(0.6);
 	}
 }
 .ball_4{
@@ -136,19 +136,25 @@
 	@include md{
 		transform: translate(-361%, 395%) scale(0.6);
 	}
+	@include sm{
+		transform: translate(-361%, 69%) scale(0.6);
+	}
 }
 .ball_5{
 	animation: Ball 2.9s linear forwards infinite;
 	animation-delay: 0.5s;
 	@include md{
 		transform: translate(-813%, 823%) scale(0.8);
+	}	
+	@include sm{
+		transform: translate(-813%, -31%) scale(0.8);
 	}
 }
 #earth_1_img{
 
 	width:100%;
 	top: -10%;
-	animation: animatedBackground 7.0s linear forwards;
+//	animation: animatedBackground 7.0s linear forwards;
 	@include md{
 		animation: none;
 		transform: translate(-13%, 30%) scale(2.5);
@@ -166,13 +172,18 @@
 		animation: none;
 		transform: translate(3%, 121%) scale(2.5);
 	}
+	@include xl{
+		
+	}
+	
 	
 }
 .earth_1{
 	position: absolute;
 	z-index: -1;
 	@include ml{
-		transform: translate(0%, 34%);
+		transform: translate(0%, 25%);
+		height: 100%;
 	}
 	@include lg{
 		transform: translate(0%, 53%);
