@@ -6,9 +6,14 @@
 
 	<title>Document</title>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-	 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css" integrity="sha384-OHBBOqpYHNsIqQy8hL1U+8OXf9hH6QRxi0+EODezv82DfnZoV7qoHAZDwMwEJvSw" crossorigin="anonymous">
-	 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
-	 <link rel="stylesheet" href="style/css/fullpage.css">
+	<!--animate css-->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css" integrity="sha384-OHBBOqpYHNsIqQy8hL1U+8OXf9hH6QRxi0+EODezv82DfnZoV7qoHAZDwMwEJvSw" crossorigin="anonymous">
+	 <!--fontawesome-->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.2/fullpage.css" />
+	<!--
+	<link rel="stylesheet" href="style/css/fullpage.css">
+-->
 	<link rel="stylesheet" href="style/css/style.css">
 </head>
 <body>
@@ -128,7 +133,7 @@
 									</div>
 									<div id="main_nav" class="main_nav d-none">
 										<ul class="main_nav_list">
-											<li class="main_nav_item" id="nav_about">
+											<li data-menuanchor="main_sect" class="main_nav_item" id="nav_about">
 												<a href="#main">
 													<span class="main_nav_href">About</span>
 													<span class="main_nav_item_icon"></span>
@@ -251,31 +256,31 @@
 							</div>
 							<div id="main_nav_2" class="main_nav d-none">
 								<ul class="main_nav_list">
-									<li data-menuanchor="sect_two" class="main_nav_item" id="nav_about">
-										<a href="#">
+									<li data-menuanchor="main_sect" class="main_nav_item" id="nav_about">
+										<a href="#main_sect">
 											<span class="main_nav_href">About</span>
 											<span class="main_nav_item_icon"></span>
 										</a>
 									</li>
-									<li data-menuanchor="sect_t" class="main_nav_item">
-										<a href="#">
+									<li data-menuanchor="sect_two" class="main_nav_item">
+										<a href="#sect_two">
 											<span class="main_nav_href">Solutions</span>
+											<span class="main_nav_item_icon"></span>
+										</a>
+									</li>
+									<li data-menuanchor="sect_t" class="main_nav_item">
+										<a href="#sect_t">
+											<span class="main_nav_href">Products</span>
 											<span class="main_nav_item_icon"></span>
 										</a>
 									</li>
 									<li data-menuanchor="sect_four" class="main_nav_item">
 										<a href="#">
-											<span class="main_nav_href">Products</span>
-											<span class="main_nav_item_icon"></span>
-										</a>
-									</li>
-									<li data-menuanchor="sect_five" class="main_nav_item">
-										<a href="#">
 											<span class="main_nav_href">Partners</span>
 											<span class="main_nav_item_icon"></span>
 										</a>
 									</li>
-									<li data-menuanchor="sect_six" class="main_nav_item">
+									<li data-menuanchor="sect_five" class="main_nav_item">
 										<a href="#">
 											<span class="main_nav_href">Contacts</span>
 											<span class="main_nav_item_icon"></span>
@@ -363,44 +368,44 @@
 							</div>
 							<div class="main_nav">
 								<ul class="main_nav_list">
-									<li class="main_nav_item">
-										<a href="#">
+									<li data-menuanchor="main_sect" class="main_nav_item">
+										<a href="#main_sect">
 											<span class="main_nav_href">About</span>
 											<span class="main_nav_item_icon"></span>
 										</a>
 									</li>
-									<li class="main_nav_item">
-										<a href="#">
+									<li data-menuanchor="sect_two" class="main_nav_item">
+										<a href="# sect_two">
 											<span class="main_nav_href">Solutions</span>
 											<span class="main_nav_item_icon"></span>
 										</a>
 									</li>
-									<li class="main_nav_item">
-										<a href="#">
+									<li data-menuanchor="sect_t" class="main_nav_item">
+										<a href="#sect_t">
 											<span class="main_nav_href">Products</span>
 											<span class="main_nav_item_icon"></span>
 										</a>
 									</li>
-									<li class="main_nav_item">
-										<a href="#">
+									<li data-menuanchor="sect_four" class="main_nav_item">
+										<a href="#sect_four">
 											<span class="main_nav_href">Partners</span>
 											<span class="main_nav_item_icon"></span>
 										</a>
 									</li>
-									<li class="main_nav_item">
-										<a href="#">
+									<li data-menuanchor="sect_five" class="main_nav_item">
+										<a href="#sect_five">
 											<span class="main_nav_href">Contacts</span>
 											<span class="main_nav_item_icon"></span>
 										</a>
 									</li>
-									<li class="main_nav_item">
-										<a href="#">
+									<li data-menuanchor="sect_six" class="main_nav_item">
+										<a href="#sect_six">
 											<span class="main_nav_href">#</span>
 											<span class="main_nav_item_icon"></span>
 										</a>
 									</li>
-									<li class="main_nav_item">
-										<a href="#">
+									<li data-menuanchor="footer" class="main_nav_item">
+										<a href="#footer">
 											<span class="main_nav_href">#</span>
 											<span class="main_nav_item_icon"></span>
 										</a>
@@ -809,8 +814,8 @@
 			</div>			
 	
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script> 
-	<script type="text/javascript" src="js/fullpage.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  	<script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.2/fullpage.js"></script>
     <script defer src="js/main.js"></script>	
 </body>
 </html>

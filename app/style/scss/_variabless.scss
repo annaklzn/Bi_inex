@@ -77,10 +77,13 @@ $black: #000000;
 	font-weight: 900;
 }
 %USRText{
-	font-family: 'Uni Sans', sana-serif;
+	font-family: 'Uni Sans', sans-serif;
 	font-weight: 400;
 }
-
+%USBText{
+	font-family: 'Uni SansB' sans-serif;
+	font-weight: 700;
+}
 %RobotoBText{
 	font-family: 'RobotoB', sans-serif;
 	font-weight: 700;

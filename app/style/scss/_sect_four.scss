@@ -1,6 +1,7 @@
 .sect_four{
+	height: 100vh;
 	color: $white;
-	@extend %USHText;
+	@extend %USBText;
 	background: url('../../img/sect_four_bg.jpg');
 	position: center center;
 	overflow: hidden;
@@ -18,6 +19,7 @@
 		}
 		.hex_1{
 			.hex_title{
+				@extend %USHText;
 				font-size: 1.5em;
 			}
 			margin-top: 8%;

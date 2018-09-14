@@ -1,10 +1,11 @@
 .sect_two{
+	height: 100vh;
 	background-image: url("../../img/sect_two_bg.jpg");
 	background-size: cover;
 	color: $white;
 	overflow: hidden;
 	.sect_two_container{
-		
+		display: grid;
 		position: relative;
 		.hexagon{
 			&:before, &:after{
@@ -23,6 +24,12 @@
 			.hex_text{
 				@extend %PTSansText;
 				font-size: 1em;
+				@include md{
+					height: 100px;
+				}
+				@include lg{
+					height: 120px;
+				}
 			}
 			.info_btn{
 				margin: 5% 34%;
@@ -34,11 +41,20 @@
 			h3{
 				@extend %USHText;
 				margin-bottom: 57px;
+				@include md{
+					margin-bottom: 30px;
+				}
 			}
 			.hex_text{
 				position: relative;
 				@extend %RobotoText;
 				font-size: 1em;
+				@include md{
+					height: 100px;
+				}
+				@include lg{
+					height: 120px;
+				}
 				
 			}
 			.info_btn{
@@ -59,8 +75,14 @@
 				margin-bottom: 26px;	
 			}
 			.hex_text{
-				@extend %USHText;
+				@extend %USBText;
 				font-size: 0.86em;
+				@include md{
+					height: 100px;
+				}
+				@include lg{
+					height: 120px;
+				}
 			}
 			.info_btn{
 				margin: -1% 34%;

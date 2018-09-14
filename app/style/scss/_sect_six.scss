@@ -73,7 +73,7 @@
 				left: 26%;
 			}
 			.t_hex_info{
-				@extend %USHText;
+				@extend %USBText;
 				color: $white;
 				font-size: 0.875em;
 				margin-top: -5px;
@@ -83,6 +83,7 @@
 					@include paddingLR(40px, 40px);
 				}
 				.hex_title{
+					@extend %USHText;
 					font-size: 1.5em;
 					margin-bottom: 40px;
 				}
