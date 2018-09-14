@@ -156,6 +156,9 @@
 } 
 
 .sect_six .sect_six_cont .scroll_down {
+	@include lg {
+			
+	}
 	@include md {
 		bottom: -9%;
 		left: 53%;

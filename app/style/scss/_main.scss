@@ -127,6 +127,7 @@ html {
 			display: flex;
     		align-items: flex-end;
 			list-style: none;
+			opacity: 0;
 			@include md{
 				margin-top: -100px;
 			}
@@ -156,20 +157,25 @@ html {
 			.ball_1{
 				margin-right: 23px;
     			margin-left: 57px;
+				opacity: 0;
 			}
 			.ball_2{
+				opacity: 0;
 			}
 			.ball_3{
 				margin-bottom: -28px;
     			margin-left: 38px;
+				opacity: 0;
 			}
 			.ball_4{
 				margin-bottom: -88px;
     			margin-left: 27px;
+				opacity: 0;
 			}
 			.ball_5{
 				margin-bottom: -229px;
     			margin-left: -2px;
+				opacity: 0;
 			}
 
 		}

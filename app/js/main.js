@@ -6,23 +6,47 @@ $(document).ready(function() {
         });
 });
 
+var liLength = $('#ball_con > li > img');
 var ballIn = function(){
-	$('#ball_con').addClass("animated slideInRight");
+	$('#ball_con').fadeTo('slow', 1).addClass("animated slideInRight");
+	setTimeout(function() {
+		liLength.eq(0).fadeTo('slow', 1);
+	}, 1000);
+	setTimeout(function() {
+		liLength.eq(1).fadeTo('slow', 1);
+	}, 1400);
+	setTimeout(function() {
+		liLength.eq(2).fadeTo('slow', 1);
+	}, 1800);
+	setTimeout(function() {
+		liLength.eq(3).fadeTo('slow', 1);
+	}, 2200);
+	setTimeout(function() {
+		liLength.eq(4).fadeTo('slow', 1);
+	}, 2600);
 	
 };
 
 var mainT = function(){
-	$("#main_tittle").removeClass("d-none").addClass("d-block animated slideInRight");
+	$("#main_tittle").removeClass("d-none").show('slow');
 };
+
+var hexagonBlock = function() {
+	$('.main_sect .main_sect_container .info_about').removeClass('d-none').addClass('d-block animated slideInLeft');
+}
 
 var flyCar = function(){
-
-	$("#fly_car_img").removeClass("d-none").addClass("d-block animated slideInLeft");
+	$("#fly_car_img").removeClass("d-none").addClass("d-block animated slideInLeft slower");
 };
 
-
+var logoHeader = $('.header .logo_container');
+var menuList = $('.navbar-expand-lg .navbar-collapse');
 var header = function(){
 	$("#header").removeClass("d-none").addClass("d-block animated fadeInDown");
+	logoHeader.addClass('d-block animated fadeInDown');
+	setTimeout(function() {
+		menuList.addClass('d-block');
+	}, 1000);
 };
 
 
@@ -40,11 +64,12 @@ var scroll = function(){
 $(window).load(function(){
  setTimeout(function(){
  	$('#preloader').addClass("d-none");
-		setTimeout(ballIn, 0);
-		setTimeout(flyCar, 2000);
-		setTimeout(header, 5000);
-		setTimeout(mainT, 6000);
-		setTimeout(scroll, 6000);
+		setTimeout(ballIn, 3000);
+		setTimeout(flyCar, 4000);
+	 	setTimeout(hexagonBlock, 5000);
+		setTimeout(header, 5500);
+		setTimeout(mainT, 9000);
+		setTimeout(scroll, 9000);
  }, 2000);
 
 
