@@ -62,23 +62,37 @@ var scroll = function(){
 
 
 $(window).load(function(){
- setTimeout(function(){
- 	$('#preloader').addClass("d-none");
+	setTimeout(function(){
+		$('#preloader').addClass("d-none");
 		setTimeout(ballIn, 3000);
 		setTimeout(flyCar, 4000);
-	 	setTimeout(hexagonBlock, 5000);
+		setTimeout(hexagonBlock, 5000);
 		setTimeout(header, 5500);
 		setTimeout(mainT, 9000);
 		setTimeout(scroll, 9000);
- }, 2000);
+	}, 2000);
+
+	$('#fullpage').fullpage({
+		navigation: false,
+		navigationPosition: 'right',
+		scrollBar: false,
+		dragAndMove: 'fingersonly',
+		normalScrollElements: '#normalScroll,',
+		onLeave: function(section, origin, destination, direction) {
+			var leavingSection = $(this);
+			var mainSect = $("#main_sect");
+
+			if(section.item == mainSect[0]) {
+				$('#header').removeClass('d-block');
+				$("#header").addClass('d-none');
+			}
+			if(section.item == $("#sect_two")[0] && destination=='up') {
+				$('#header').removeClass('d-none');
+				$('#header').addClass('d-block');
+			}
+
+		}
+	});
+
 	
 });
-
-
-$('#fullpage').fullpage({
-		navigation: false,
-	    navigationPosition: 'right',
-	    scrollBar: false,
-	    dragAndMove: 'fingersonly',
-	    normalScrollElements: '#normalScroll,',
-	 });

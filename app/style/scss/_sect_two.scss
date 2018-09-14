@@ -5,11 +5,20 @@
 	color: $white;
 	overflow: hidden;
 	.sect_two_container{
-		margin-top: 100px;
 		position: relative;
+		@include lg{
+			max-width: 100vw;
+		}
 		.hexagon{
+			@include lg{
+				width: 409px;
+			}
 			&:before, &:after{
 				margin-left: 0%;
+				@include lg{
+					border-left: 205px solid transparent;
+					border-right: 205px solid transparent;
+				}
 			}
 			.info_btn{
 				margin: 10% 34%;
@@ -86,6 +95,11 @@
 			}
 			.info_btn{
 				margin: -1% 34%;
+			}
+		}
+		.main_nav {
+			@include lg{
+				right: 1vw;
 			}
 		}
 		.sect_two_info{
