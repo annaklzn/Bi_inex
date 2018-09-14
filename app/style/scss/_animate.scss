@@ -30,13 +30,13 @@
 }
 @keyframes Ball{
     0 {
-        transform: translate(0px, 25px)
+        transform: translate(0px, 30px)
     }
     50%{
-		transform: translate(0px, -32px)
+		transform: translate(0px, -39px)
     }
     100% {
-        transform: translate(0px, 7px)
+        transform: translate(0px, 9px)
     }
 }
 @keyframes MouseOn{
@@ -65,10 +65,22 @@
 	@include md{
 		animation: none;
 		transform: scale(1.0);
-		background-position-y: -143px;
+		background-position-y: -130px;
 		background-position-x: 51%;
 		background-size: 215%;
+		
 
+	}
+	@include lg{
+		animation: none;
+		background-position-x: 39%;
+	}
+	@include sm{
+		animation: none;
+	}
+	@include xs{
+		animation: none;
+		background-position-x: 58%;
 	}
 }
 
@@ -79,8 +91,9 @@
 		transform: translate(-31%, 79%) scale(0.8);
 	} 
 	@include lg{
-		transform: translate(-20%, 50%) scale(0.7);
+		transform: translate(-34%, 80%) scale(0.8);
 	}
+
 
 }
 
@@ -91,38 +104,37 @@
 	}
 }
 .ball_2{
-	animation: Ball 2.5s linear forwards infinite;
+	animation: Ball 2.9s linear forwards infinite;
 	animation-delay: 0.5s;
 	@include md{
 		transform: translate(-93%, 217%) scale(0.6);
 	}
 }
 .ball_3{
-	animation: Ball 1.7s linear forwards infinite;
+	animation: Ball 2.1s linear forwards infinite;
 	animation-delay: 0s;
 	@include md{
 		transform: translate(-161%, 238%) scale(0.6);
 	}
 }
 .ball_4{
-	animation: Ball 2.5s linear forwards infinite;
+	animation: Ball 2.9s linear forwards infinite;
 	animation-delay: 0.5s;
 	@include md{
 		transform: translate(-93%, 243%) scale(0.6);
 	}
 }
 .ball_4{
-	animation: Ball 2.5s linear forwards infinite;
+	animation: Ball 2.9s linear forwards infinite;
 	animation-delay: 0s;
 	@include md{
 		transform: translate(-361%, 395%) scale(0.6);
 	}
 }
 .ball_5{
-	animation: Ball 2.5s linear forwards infinite;
+	animation: Ball 2.9s linear forwards infinite;
 	animation-delay: 0.5s;
 	@include md{
-		transform: translate(-800%, 973%) scale(0.8);
 		transform: translate(-813%, 823%) scale(0.8);
 	}
 }
@@ -133,7 +145,20 @@
 	animation: animatedBackground 7.0s linear forwards;
 	@include md{
 		animation: none;
-		transform: translate(-13%, 30%) scale(2);
+		transform: translate(-13%, 30%) scale(2.5);
+		
+	}
+	@include lg{
+		transform: translate(0%, 0%) scale(1.5);
+	}
+	
+	@include sm{
+		animation: none;
+		transform: translate(-24%, 73%) scale(2.5);
+	}
+	@include xs{
+		animation: none;
+		transform: translate(3%, 121%) scale(2.5);
 	}
 	
 }
@@ -144,6 +169,6 @@
 		transform: translate(0%, 34%);
 	}
 	@include lg{
-		transform: translate(0%, 54%);
+		transform: translate(0%, 53%);
 	}
 }

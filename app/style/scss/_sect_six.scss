@@ -69,13 +69,14 @@
 			left: 9%;
 			color: $white;
 			.t_hex_info{
-				@extend %USHText;
+				@extend %USBText;
 				color: $white;
 				font-size: 0.875em;
 				margin-top: -5px;
 				@include paddingLR(66px, 66px);
 				text-align: center;
 				.hex_title{
+					@extend %USHText;
 					font-size: 1.5em;
 					margin-bottom: 40px;
 				}

@@ -1,7 +1,9 @@
 .sect_t{
+	height: 100vh;
 	color: $white;
-	@extend %USHText;
-	background: url('../../img/sect_t_bg.jpg');
+	@extend %USBText;
+	background: url('../../img/sect_t_bg.jpg') no-repeat;
+	background-size: cover;
 	position: center center;
 	overflow: hidden;
 	.sect_t_cont{
@@ -26,9 +28,10 @@
 		.t_hex_info{
 			font-size: 0.875em;
 			margin-top: -5px;
-			@include paddingLR(66px, 66px);
+			@include paddingLR(45px, 45px);
 			text-align: center;
 			.hex_tittle{
+				@extend %USHText;
 				margin-bottom: 26px;
 				font-size: 1.875em;
 			}
