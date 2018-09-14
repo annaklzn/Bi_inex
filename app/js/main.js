@@ -45,19 +45,13 @@ $(window).load(function(){
 		setTimeout(header, 5000);
 		setTimeout(mainT, 6000);
 		setTimeout(scroll, 6000);
- }, 2000);
-
+ }, 2000);		
+});
 
 $('#fullpage').fullpage({
-	 	anchors:['#main_sect', '#sect_two', '#sect_t', '#sect_four', '#sect_five', '#sect_six', '#footer'],
 		navigation: false,
 	    navigationPosition: 'right',
 	    scrollBar: false,
 	    dragAndMove: 'fingersonly',
 	    normalScrollElements: '#normalScroll,',
-	    showActiveTooltip: true
 	 });
-
-	
-});
-

@@ -469,9 +469,9 @@ html {
       background-color: #000000ab; }
       @media (min-width: 768px) and (max-width: 991px) {
         .main_sect .main_sect_container .info_about {
-          -webkit-transform: translate(-24%, 129%);
-              -ms-transform: translate(-24%, 129%);
-                  transform: translate(-24%, 129%);
+          -webkit-transform: translate(16%, 42%);
+              -ms-transform: translate(16%, 42%);
+                  transform: translate(16%, 42%);
           padding-left: 15px;
           padding-right: 15px; } }
       @media (min-width: 992px) and (max-width: 1199px) {
@@ -768,7 +768,7 @@ html {
   color: #ffffff;
   overflow: hidden; }
   .sect_two .sect_two_container {
-    display: grid;
+    margin-top: 100px;
     position: relative; }
     .sect_two .sect_two_container .hexagon:before, .sect_two .sect_two_container .hexagon:after {
       margin-left: 0%; }
