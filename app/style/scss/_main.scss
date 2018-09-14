@@ -121,6 +121,9 @@ html {
 .main_sect{
 	height: 100vh;
 	.main_sect_container{
+		position: relative;
+		@extend %USHText;
+		color: $white;
 		.ball_con{
 			margin-top: 200px;
 			background: transparent;
@@ -180,9 +183,6 @@ html {
 
 		}
 
-		position: relative;
-		@extend %USHText;
-		color: $white;
 		.main_tittle{
 			margin-top: 23%;
    			margin-left: 76px;
@@ -206,8 +206,10 @@ html {
 			font-size: 0.875em;
 			text-align: center;
 			background-color: #000000ab;
+
 				@include md{
-					transform: translate(-24%, 129%);
+					
+					    transform: translate(16%, 42%);
 					@include paddingLR(15px, 15px);
 				}
 				@include lg{
