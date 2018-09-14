@@ -7,7 +7,7 @@
 .opacity {
   opacity: 0; }
 
-.orange_tittle, .scroll_down, .join_us, .learn_m, .main_nav, .header, .main_sect .main_sect_container, .main_sect .main_sect_container .info_about .info_tittle, .sect_two .sect_two_container .sect_two_hex_2 h3, .sect_t .sect_t_cont .t_hex_info .hex_tittle, .sect_four .sect_four_cont .hex_1 .hex_title, .sect_five .sect_five_cont .t_hex_info .hex_tittle, .sect_five .sect_five_cont .img_cont .overlay .overlay_text, .sect_six .sect_six_cont .hex_1 .t_hex_info .hex_title, .footer .footer_cont .f_menu h3, .footer .social h3 {
+.orange_tittle, .scroll_down, .join_us, .learn_m, .main_nav, .header, .main_sect .main_sect_container, .main_sect .main_sect_container .info_about .info_tittle, .sect_two .sect_two_container .sect_two_hex_2 h3, .sect_t .sect_t_cont .t_hex_info .hex_tittle, .sect_four .sect_four_cont .hex_2 .hex_tittle, .sect_four .sect_four_cont .hex_1 .hex_tittle, .sect_four .sect_four_cont .hex_4 .hex_tittle, .sect_five .sect_five_cont .t_hex_info .hex_tittle, .sect_five .sect_five_cont .img_cont .overlay .overlay_text, .sect_six .sect_six_cont .hex_1 .t_hex_info .hex_title, .footer .footer_cont .f_menu h3, .footer .social h3 {
   font-family: 'Uni Sans Heavy Caps', sans-serif;
   font-weight: 900; }
 
@@ -649,6 +649,16 @@ html {
       -webkit-transform: translate(-34%, 80%) scale(0.8);
           -ms-transform: translate(-34%, 80%) scale(0.8);
               transform: translate(-34%, 80%) scale(0.8); } }
+  @media (min-width: 576px) and (max-width: 767px) {
+    #fly_car {
+      -webkit-transform: translate(-41%, 99%) scale(0.8);
+          -ms-transform: translate(-41%, 99%) scale(0.8);
+              transform: translate(-41%, 99%) scale(0.8); } }
+  @media (min-width: 320px) and (max-width: 575px) {
+    #fly_car {
+      -webkit-transform: translate(-41%, 99%) scale(0.8);
+          -ms-transform: translate(-41%, 99%) scale(0.8);
+              transform: translate(-41%, 99%) scale(0.8); } }
 
 .ball_1 {
   -webkit-animation: Ball 2s linear forwards infinite;
@@ -884,7 +894,7 @@ html {
 .sect_four {
   height: 100vh;
   color: #ffffff;
-  background: url("../../img/sect_four_bg.jpg");
+  background: url("../../img/sect_four_bg.jpg") no-repeat;
   position: center center;
   overflow: hidden; }
   .sect_four .sect_four_cont {
@@ -898,7 +908,7 @@ html {
     .sect_four .sect_four_cont .hex_1 {
       margin-top: 8%;
       margin-left: 35px; }
-      .sect_four .sect_four_cont .hex_1 .hex_title {
+      .sect_four .sect_four_cont .hex_1 .hex_tittle {
         font-size: 1.5em; }
     .sect_four .sect_four_cont .hex_4 {
       -webkit-transform: translate(130%, -48%);

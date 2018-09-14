@@ -76,7 +76,7 @@
 		background-position-x: 39%;
 	}
 	@include sm{
-		animation: none;
+		animation: none;	
 	}
 	@include xs{
 		animation: none;
@@ -92,6 +92,12 @@
 	} 
 	@include lg{
 		transform: translate(-34%, 80%) scale(0.8);
+	}
+	@include sm{
+		transform: translate(-41%, 99%) scale(0.8);
+	}
+	@include xs{
+		transform: translate(-41%, 99%) scale(0.8);
 	}
 
 

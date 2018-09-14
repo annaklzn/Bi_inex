@@ -202,7 +202,8 @@ html {
 			background-color: #000000ab;
 
 				@include md{
-					transform: translate(16%, 42%);
+					
+					    transform: translate(16%, 42%);
 					@include paddingLR(15px, 15px);
 				}
 				@include lg{
