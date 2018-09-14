@@ -243,13 +243,9 @@ html {
 
 			}
 			.info_about_text{
-<<<<<<< HEAD
 				@extend %RobotoText;
-=======
 				font-family: "Roboto", Arial, sans-serif;
 				font-weight: 400;
-				@extend %USBText;
->>>>>>> 9ea15e8d7365ec736e5bb3590c22162975042e85
 				height: 140px;
 				overflow-x: hidden;
     			overflow-y: scroll;
