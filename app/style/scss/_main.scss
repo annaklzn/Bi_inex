@@ -243,6 +243,8 @@ html {
 
 			}
 			.info_about_text{
+				font-family: "Roboto", Arial, sans-serif;
+				font-weight: 400;
 				@extend %USBText;
 				height: 140px;
 				overflow-x: hidden;

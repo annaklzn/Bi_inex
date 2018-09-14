@@ -84,7 +84,7 @@
 				margin-bottom: 26px;	
 			}
 			.hex_text{
-				@extend %USBText;
+				@extend %RobotoText;
 				font-size: 0.86em;
 				@include md{
 					height: 100px;

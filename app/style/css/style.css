@@ -15,11 +15,11 @@
   font-family: 'Uni Sans', sans-serif;
   font-weight: 400; }
 
-.main_sect .main_sect_container .info_about .info_about_text, .sect_two .sect_two_container .sect_two_hex_4 .hex_text, .sect_t, .sect_four, .sect_five .sect_five_cont .t_hex_info, .sect_six .sect_six_cont .hex_1 .t_hex_info {
+.main_sect .main_sect_container .info_about .info_about_text {
   font-family: 'Uni SansB' sans-serif;
   font-weight: 700; }
 
-.sect_two .sect_two_container .sect_two_hex_2 .hex_text, .footer {
+.sect_two .sect_two_container .sect_two_hex_2 .hex_text, .sect_two .sect_two_container .sect_two_hex_4 .hex_text, .sect_t, .sect_four, .sect_five .sect_five_cont .t_hex_info, .sect_six .sect_six_cont .hex_1 .t_hex_info, .footer {
   font-family: 'Roboto', sans-serif;
   font-weight: 400; }
 
@@ -50,7 +50,7 @@ a {
   transition: all .5s ease-in-out; }
   @media (min-width: 992px) and (max-width: 1199px) {
     .scroll_down {
-      bottom: -6%; } }
+      bottom: 3%; } }
   .scroll_down .anime {
     -webkit-animation: MouseOn 2s ease-in-out forwards infinite;
             animation: MouseOn 2s ease-in-out forwards infinite; }
@@ -71,7 +71,7 @@ a {
   right: 7%; }
   @media (min-width: 992px) and (max-width: 1199px) {
     .join_us {
-      bottom: -5%; } }
+      bottom: 4%; } }
   @media (min-width: 768px) and (max-width: 991px) {
     .join_us {
       bottom: -29%;
@@ -546,6 +546,8 @@ html {
           .main_sect .main_sect_container .info_about .info_tittle {
             margin-bottom: 15px; } }
       .main_sect .main_sect_container .info_about .info_about_text {
+        font-family: "Roboto", Arial, sans-serif;
+        font-weight: 400;
         height: 140px;
         overflow-x: hidden;
         overflow-y: scroll; }

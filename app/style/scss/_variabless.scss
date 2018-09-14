@@ -139,7 +139,7 @@ a{
     left: 47%;
     transition: all .5s ease-in-out;
 	@include lg {
-		bottom: -6%;
+		bottom: 3%;
 	}
     .anime{
     	animation: MouseOn 2s ease-in-out forwards infinite;
@@ -163,7 +163,7 @@ a{
     bottom: 5%;
     right: 7%;
 	@include lg {
-		bottom: -5%;
+		bottom: 4%;
 	}
     @include md{
     	bottom: -29%;
