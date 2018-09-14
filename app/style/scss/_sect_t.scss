@@ -1,7 +1,7 @@
 .sect_t{
 	height: 100vh;
 	color: $white;
-	@extend %USBText;
+	@extend %RobotoText;
 	background: url('../../img/sect_t_bg.jpg') no-repeat;
 	background-size: cover;
 	position: center center;

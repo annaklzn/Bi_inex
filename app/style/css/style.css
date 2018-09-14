@@ -15,15 +15,11 @@
   font-family: 'Uni Sans', sans-serif;
   font-weight: 400; }
 
-.main_sect .main_sect_container .info_about .info_about_text, .sect_two .sect_two_container .sect_two_hex_4 .hex_text, .sect_t, .sect_four, .sect_five .sect_five_cont .t_hex_info, .sect_six .sect_six_cont .hex_1 .t_hex_info {
-  font-family: 'Uni SansB' sans-serif;
-  font-weight: 700; }
-
-.sect_two .sect_two_container .sect_two_hex_2 .hex_text, .footer {
+.main_sect .main_sect_container .info_about .info_about_text, .sect_two .sect_two_container .sect_two_hex_1 .hex_text, .sect_two .sect_two_container .sect_two_hex_2 .hex_text, .sect_two .sect_two_container .sect_two_hex_4 .hex_text, .sect_t, .sect_four, .sect_five .sect_five_cont .t_hex_info, .sect_six .sect_six_cont .hex_1 .t_hex_info, .footer {
   font-family: 'Roboto', sans-serif;
   font-weight: 400; }
 
-.sect_two .sect_two_container .sect_two_hex_1 .hex_text, .sect_five .sect_five_cont .img_cont .overlay .overlay_text .ov_txt {
+.sect_five .sect_five_cont .img_cont .overlay .overlay_text .ov_txt {
   font-family: 'PT Sans', sans-serif;
   font-weight: 400; }
 
@@ -806,7 +802,9 @@ html {
 
 #earth_1_img {
   width: 100%;
-  top: -10%; }
+  top: -10%;
+  -webkit-animation: animatedBackground 7.0s linear forwards;
+          animation: animatedBackground 7.0s linear forwards; }
   @media (min-width: 768px) and (max-width: 991px) {
     #earth_1_img {
       -webkit-animation: none;

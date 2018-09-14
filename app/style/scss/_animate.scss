@@ -154,7 +154,7 @@
 
 	width:100%;
 	top: -10%;
-//	animation: animatedBackground 7.0s linear forwards;
+	animation: animatedBackground 7.0s linear forwards;
 	@include md{
 		animation: none;
 		transform: translate(-13%, 30%) scale(2.5);
