@@ -275,7 +275,9 @@ a{
     overflow-y: scroll;
 }
 .hex_text::-webkit-scrollbar {width:0px;}
-
+.container {
+	height: 100%!important;
+}
 #preloader{
 	background: $black;
 	width: 100vw;
