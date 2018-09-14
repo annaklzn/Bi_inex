@@ -65,7 +65,8 @@
 		}
 		.hex_1{
 			position: absolute;
-			top: 30%;
+			top: 27%;
+			left: 9%;
 			color: $white;
 			.t_hex_info{
 				@extend %USHText;
@@ -93,6 +94,36 @@
 	}
 	
 	// Map marks
+	.mp-marks-item {
+		position: absolute;
+	}
 	
+	.mp-marks-item.one {
+		top: 23%;
+		left: 44%;
+	}
 	
+	.mp-marks-item.two {
+		top: 23%;
+		left: 51.5%;
+	} 
+	.mp-marks-item.third {
+		top: 19%;
+		left: 54%;
+	}
+	
+	.mp-marks-item.fourth {
+		top: 18%;
+		left: 57.5%;
+	}
+	
+	.mp-marks-item.five {
+		top: 16.5%;
+		left: 39%;
+	}
+	
+	.mp-marks-item.six {
+		top: 100px;
+		left: 151px;
+	}
 }
