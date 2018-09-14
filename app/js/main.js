@@ -32,7 +32,7 @@ var mainT = function(){
 };
 
 var hexagonBlock = function() {
-	$('.main_sect .main_sect_container .info_about').removeClass('d-none').addClass('d-block animated slideInLeft');
+	$('.main_sect .main_sect_container .info_about').removeClass('d-none').addClass('d-block animated fadeIn');
 }
 
 var flyCar = function(){
